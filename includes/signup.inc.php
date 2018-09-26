@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
         exit();
     }else{
         //Check if input characters are valid
-        if(!preg_match("/^[a-zA-Z]*$/", $username)){
+        if(!preg_match("/^[a-z A-Z]*$/", $username)){
             header("Location: ../index.php?signup=invalid");
             exit();
         }else{
