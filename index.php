@@ -26,7 +26,7 @@
                     <div class="modal-body">
                         <form action="includes/signup.inc.php" method="POST">
                             <div class="form-group">
-                                <label for="inputUserName">Username</label>
+                                <label for="inputUserName">Usernamer</label>
                                 <input type="text" name="name" class="form-control" placeholder="Username" />
                             </div>
                             <div class="form-group">
