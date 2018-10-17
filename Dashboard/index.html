@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>Papertrail - Dashboard</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="../arbor-v0.92/lib/arbor.js"></script>
+        <script src="../arbor-v0.92/lib/graphics.js"></script>
+        <script src="../arbor-v0.92/lib/renderer.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" width="100%" height="100%" alt="">
+            </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="navbar-collapse collapse" id="collapsingNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">My Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <canvas id='viewport' style='position: absolute; left: 0px; top: 80px;'></canvas>
+        <script>
+            (function() {
+                var canva2s = document.getElementById('viewport'),
+                    context = canvas.getContext('2d');
+
+
+                // Start listening to resize events and
+                // draw canvas.
+                initialize();
+
+                function initialize() {
+                    // Register an event listener to
+                    // call the resizeCanvas() function each time 
+                    // the window is resized.
+                    window.addEventListener('resize', resizeCanvas, false);
+
+                    // Draw canvas border for the first time.
+                    resizeCanvas();
+                }
+
+                // Display custom canvas.
+                // In this case it's a blue, 5 pixel border that 
+                // resizes along with the browser window.					
+                function redraw() {
+                    var sys = arbor.ParticleSystem(1000);
+                    sys.parameters({
+                        gravity: false
+                    });
+
+                    sys.renderer = Renderer("#viewport");
+                    var data = {
+                        nodes: {
+                            note1: {
+                                "color": "#6108a7",
+                                "shape": "dot",
+                                "label": "Java Interitance"
+                            },
+                            user1: {
+                                "color": "#8a2f0d",
+                                "shape": "square",
+                                "label": "Lorcan"
+                            },
+                            user2: {
+                                "color": "#f8d159",
+                                "shape": "square",
+                                "label": "Ayo"
+                            },
+                            user3: {
+                                "color": "#8a2f0d",
+                                "shape": "square",
+                                "label": "Rob"
+                            },
+                            note2: {
+                                "color": "#6108a7",
+                                "shape": "dot",
+                                "label": "Java Abstraction"
+                            },
+                            note3: {
+                                "color": "#6108a7",
+                                "shape": "dot",
+                                "label": "Java Polymorhism"
+                            },
+                        },
+                        edges: {
+                            note1: {
+                                user1: { length: .5 },
+                                user2: { length: .5 },
+                                user3: { length: .5 }
+                            },
+                            note2: {
+                                user1: { length: .5 },
+                                user2: { length: .5 }
+
+                            },
+                            note3: {
+                                user2: { length: .5 },
+                                user3: { length: .5 }
+                            },
+                        }
+                    };
+                    sys.graft(data);
+                }
+
+                // Runs each time the DOM window resize event fires.
+                // Resets the canvas dimensions to match window,
+                // then draws the new borders accordingly.
+                function resizeCanvas() {
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                    redraw();
+                }
+
+            })();
+        </script>
+
+</html>

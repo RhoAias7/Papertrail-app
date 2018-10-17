@@ -1,0 +1,40 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+    overflow: hidden;
+    /*  Disable scrollbars */
+    display: block;
+    /* No floating content on sides */
+}
+
+#bottomRight {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+
+}
+
+#bottomLeft {
+    position: fixed;
+    bottom: 100px;
+    left: 100px;
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+}
+
+#drop_zone {
+    border: #007BFF 5px dashed;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    font-size: 50px;
+    text-align: center;
+
+}

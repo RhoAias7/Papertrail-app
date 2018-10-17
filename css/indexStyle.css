@@ -1,0 +1,80 @@
+.landing {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    color: white;
+    font-weight: 900;
+    background-color: #00b9e4;
+}
+
+.owl-show {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: white;
+    font-weight: 900;
+}
+
+.modules {
+    background-color: #3051A0;
+}
+
+.navbar {
+    color: black;
+    background-color: #ffffff !important;
+}
+
+.head {
+    background-image: url("../Lorcan/home-page/weather.png");
+    height: auto;
+}
+
+.btn {
+    background-color: #00b9e4;
+    color: white;
+}
+
+.sign-up {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sign-div {
+    color: #3051A0;
+}
+
+.info {
+    background-color: #00b9e4;
+}
+
+.what {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.info-image {
+    background-color: white;
+}
+
+.size {
+    width: 200px;
+    height: 200px;
+}
+
+.resize {
+    width: 160px;
+    height: 160px;
+}
+
+h5 {
+    color: #BCF2FF;
+}
+
+.leftAlign {
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
