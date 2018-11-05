@@ -1,37 +1,56 @@
-.landing {
-    text-align: center;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    color: white;
-    font-weight: 900;
-    background-color: #00b9e4;
+body {
+    background-color: white;
+    font-size: 15px;
 }
 
-.owl-show {
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    color: white;
-    font-weight: 900;
-}
 
-.modules {
-    background-color: #3051A0;
+
+.zero {
+    height: 500px;
 }
 
 .navbar {
-    color: black;
-    background-color: #ffffff !important;
+    color: #00b9e4;
+    background-color: #00b9e4 !important;
+    border-radius: 0;
 }
 
-.head {
-    background-image: url("../Lorcan/home-page/weather.png");
-    height: auto;
+.navBtn {
+    background-color: #ffffff;
+    width: 90px;
+    color: #00b9e4;
+    float: right;
 }
 
-.btn {
-    background-color: #00b9e4;
+.navbar-toggler {
+    color: #ffffff;
+}
+
+.landing {
+    margin-top: 50px;
+    text-align: center;
+    padding: 50px;
+}
+
+.cta {
+    color: #00b9e4;
+    font-weight: 900;
+}
+
+.signIn {
+    font-weight: 500;
+    padding: 10px;
+    width: 200px;
+    float: right;
+    border-width: 2px;
     color: white;
+    background-color: #00b9e4;
+}
+
+.signIn:hover {
+    color: #00b9e4;
+    border-color: #00b9e4;
+    background-color: white !important;
 }
 
 .sign-up {
@@ -43,38 +62,116 @@
     color: #3051A0;
 }
 
+.one {
+    background-color: #dcf8ff;
+    height: 350px;
+}
+
 .info {
-    background-color: #00b9e4;
+    margin-top: 20px;
 }
 
 .what {
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-.info-image {
-    background-color: white;
-}
-
-.size {
-    width: 200px;
-    height: 200px;
-}
-
-.resize {
-    width: 160px;
-    height: 160px;
-}
-
-h5 {
-    color: #BCF2FF;
+    text-align: left;
+    width: 250px;
+    color: #00b9e4;
+    padding-bottom: 1px;
+    margin-bottom: 25px;
+    border: 4px;
+    border-bottom-style: solid;
 }
 
 .leftAlign {
     text-align: left;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+}
 
+h4 {
+    color: #00b9e4;
+    padding-bottom: 15px;
+    font-weight: 300;
+}
+
+.info-image {
+    margin-top: 20px;
+}
+
+.two {}
+
+.tutSection {
+    margin-top: 20px
+}
+
+.tutHeader {
+    text-align: left;
+    width: 250px;
+    color: #00b9e4;
+    border-color: white;
+    padding-bottom: 2px;
+    margin-bottom: 30px;
+    border: 4px;
+    border-bottom-style: solid;
+}
+
+i {
+    color: #00b9e4
+}
+
+.graph {}
+
+.three {
+    background-color: #dcf8ff;
+    height: auto;
+
+}
+
+.subHeader {
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.selectSub {
+    text-align: center;
+    width: 250px;
+    color: #00b9e4;
+    padding-bottom: 2px;
+    margin-bottom: 30px;
+    border: 4px;
+    border-bottom-style: solid;
+}
+
+.card-deck {
+    margin-top: 30px;
+}
+
+.card {
+    text-align: center;
+    border-color: #e3e3e3;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+    height: 300px
+}
+
+.card-body {
+    color: white;
+    background-color: white;
+    height: 100px;
+}
+
+.card-title {
+    text-align: center;
+    color: #00b9e4;
+}
+
+.card-link {
+    float: right;
+    font-size: 30px;
+    color: #00b9e4;
+}
+
+.card-img-top {
+    height: 190px;
+    width: 190px;
+    padding: 10px;
+    margin: auto;
 }
