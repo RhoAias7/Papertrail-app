@@ -124,24 +124,16 @@
       </div>
       <!--Model for upload-->
       <script>
-         var sys = arbor.ParticleSystem(20);
+         var sys = arbor.ParticleSystem(5, 10, 0.1341, true, 55);
          sys.parameters({
-                gravity: false
+                gravity: true
          });
          
          sys.renderer = Renderer("#viewport");
-         var data = {
-                nodes: {
-                       node1: {
-                              color: "#70D7FF",
-                              shape: "dot",
-                              label: "Database Slides 1",
-                              link: "uploads/pdfs/1_ADV_Database Review.pdf"
-                       },
-                },
-         };
-         
-         sys.graft(data);
+
+<?php
+    include "show.php";
+?>
       </script>
    </body>
    <style type="text/css">
