@@ -1,8 +1,9 @@
+
 <?php
    session_start();
    ?>
 <!doctype node2>
-<node2 lang="en">
+<node2 lang="en"> 
    <head>
       <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
       <script src="arbor-v0.92/lib/arbor.js"></script>
