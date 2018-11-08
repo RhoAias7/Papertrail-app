@@ -1,3 +1,6 @@
+<?php
+    include 'sideHoePHP.php';
+?>
 <!doctype html>
 <html lang="en">
 
@@ -8,8 +11,6 @@
 
               <!-- Bootstrap CSS -->
               <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-              <!-- My CSS -->
-              <link rel="stylesheet" type="text/css" href="style.css">
               <title>Side hoe</title>
        </head>
 
@@ -31,23 +32,26 @@
                                    </div>
                                    <div class="modal-body">
                                           <div class="container-fluid">
-                                                 <div class="row">
+                                                 <div class="row"><form method="post" action="">
                                                         <div class="col-md-3">
-                                                               <button type="button" class="btn btn-success" id="good">Good!</button>
+                                                                <label>Good!</label>
+                                                               <input type="radio" value="good" name="insert1">
                                                         </div>
                                                         <div class="col-md-3">
-                                                               <button type="button" class="btn btn-warning" id="meh">Meh :/</button>
+                                                              <label>Meh :/</label>
+                                                               <input type="radio" value="meh" name="insert1">
                                                         </div>
                                                         <div class="col-md-3">
-                                                               <button type="button" class="btn btn-danger" id="bad">Terriable :(</button>
+                                                                <label>Terriable :(</label>
+                                                               <input type="radio"  value="bad" name="insert1">
                                                         </div>
                                                  </div>
-                                                 <form>
+                                                 
                                                         <div class="form-group">
                                                                <label for="formGroupExampleInput">What do you think</label>
-                                                               <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Comment">
+                                                               <input type="text" class="form-control" name="comment"  placeholder="Comment">
                                                         </div>
-                                                 </form>
+                                                 
 
                                                  <div class="row">
                                                         <div class="col-md-3">
@@ -62,8 +66,10 @@
                                    </div>
                                    <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                          <button type="button" class="btn btn-primary">Save changes</button>
-                                   </div>
+                                          <!--<button type="button" method = "post" name = "save" class="btn btn-primary">Save changes</button>
+                                            -->
+                                            <input type="submit" />
+                                   </div></form>
                             </div>
                      </div>
               </div>
