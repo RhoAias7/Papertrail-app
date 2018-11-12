@@ -80,7 +80,7 @@
       <div class="container-fluid">
          <div class="row">
             <div class="">
-               <canvas id="viewport" width="1366" height="768"></canvas>
+               <canvas id="viewport" width="1366" height="568"></canvas>
             </div>
          </div>
          <div class="row">
@@ -128,12 +128,14 @@
          sys.parameters({
                 gravity: true
          });
-         
          sys.renderer = Renderer("#viewport");
 
-<?php
-    include "show.php";
-?>
+          <?php
+              include "show.php";
+          ?>
+
+         //console.log("hello");
+
       </script>
    </body>
    <style type="text/css">
