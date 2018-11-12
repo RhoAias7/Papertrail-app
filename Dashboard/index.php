@@ -12,7 +12,7 @@
       <script src="../stuff/js/lib/renderer.js"></script>
       <!-- <script src="main.js"></script> -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-      <link rel="stylesheet" href="../css/indexStyle.css"> 
+      <link rel="stylesheet" href="style.css"> 
    </head>
    <body>
       <nav class="navbar navbar-expand-md navbar-dark bg-primary">
@@ -138,7 +138,7 @@
 				   <select name="Filetype" class="form-control" id="fileDrop">
 						<option value="worddoc">Word Document</option>
 						<option value="ppoint">Power Point</option>
-						<option value="pdf">Pdf</option>
+						<option value="pdf">PFD</option>
 						<option value="mp4">MP4 Video</option>
 					   <option value="mp3">MP3 Audio</option>
 				  </select>
