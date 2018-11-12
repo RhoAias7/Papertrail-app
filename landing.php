@@ -56,7 +56,7 @@ session_start();
                 <div class="col-md-1"></div>
                 <div class="col-md-10 landing">
                    <h1 class="cta">Join your peers today to share and explore our vast libraries of your study material.</h1><br>
-           		<button type="button" class="btn signIn" data-toggle="modal" data-target="#exampleModal"><a href="signUpPage.php">Sign Up Today</a></button>
+           		<button type="button" class="btn signIn"> <a href="signUpPage.php">Sign Up Today</a></button>
                 </div>
                 <div class="col-md-1"></div>
              </div>
@@ -72,7 +72,7 @@ session_start();
                       <h4>Share your notes ✓</h4>
                       <h4>View your peers' notes ✓</h4>
                       <h4>Rate uploaded material ✓</h4>
-                      <h4>Quickly discover notes tailored for you ✓</h4>
+                      <h4>Quickly discover the best notes for you ✓</h4>
                    </div>
                 </div>
                 <div class="col-md-5 info-image">

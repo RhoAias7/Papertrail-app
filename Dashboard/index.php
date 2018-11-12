@@ -16,7 +16,7 @@
    </head>
    <body>
       <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-         <a class="navbar-brand" href="../../landing.php">
+         <a class="navbar-brand" href="../landing.php">
          <img src="log.png" width="50px" height="50px" alt="">
          </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
          <span class="navbar-toggler-icon"></span>
