@@ -36,7 +36,12 @@ if(isset($_POST['submit'])){
                     //Insert the user into the database
                     $sql = "INSERT INTO users (user_name, user_email, user_pwd) VALUES ('$username', '$email', '$hashedPwd');";
                     mysqli_query($conn, $sql);
-                    header("Location: ../index.php?signup=success");
+                    //robs code: trying to log the new user into a session so they dont have to go to the log in form after creating an account 
+                    $_SESSION[u_id] = $row[user_id];
+                    $_SESSION[u_name] = $row[user_name];
+                    $_SESSION[u_email] = $row[user_email];
+                    //I got this code ^ from the login.inc.php file
+                    header("Location: ../index.php?signup=welcome");
                     exit();
                 }
             }
