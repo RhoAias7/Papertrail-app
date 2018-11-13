@@ -313,7 +313,7 @@ canvas.linkable {
   color: #f12c53;
   width: auto;
 }
-li {
+.rateLi {
   list-style: none;
   display: inline;
   font-size: 20px;

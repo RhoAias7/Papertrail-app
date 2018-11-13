@@ -15,7 +15,7 @@
 
     <!-- <script src="fileRate.js"></script> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
 </head>
 
 <body>
@@ -70,18 +70,19 @@
 
                         <div class="row">
                             <div class="col-2"></div>
-                            <form class="form-group">
+<!--start of rating form--> 
+                            <form class="form-group" method="post" role="form" action="user_rating.php">
                                 <ul>
                                     <p>Select one:</p>
-                                    <li id="per" ><input id="check" type="checkbox" name="per">Perfect</input></li>
-                                    <li id="rel" ><input type="checkbox" name="rel">Relevant</input></li>
-                                    <li id="irel"><input type="checkbox" name="irel">Irelevant</input></li>
+                                    <li class="rateLi" id="per" ><input class="check" type="radio" name="rate">Perfect</li>
+                                    <li class="rateLi" id="rel"><input class="check" type="radio" name="rate">Relevant</li>
+                                    <li class="rateLi" id="irel"><input class="check" type="radio" name="rate">Irelevant</li>
                                 </ul>
                         </div>
                         <br>
                         <div class="row">
                             <label for="formGroupExampleInput">Have your say..</label>
-                            <input type="text" class="form-control" id="userComment" placeholder="What are your thoughts on this file?">
+                            <input type="text" class="form-control" id="userComment" placeholder="What are your thoughts on this file?" name="usrComment">
                             <button type="submit" class="btn submit">Submit</button>
                         </div>
                         </form>
