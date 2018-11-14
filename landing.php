@@ -44,7 +44,7 @@ session_start();
             else {
                    
                    echo '<div class="navbar-collapse collapse" id="collapsingNavbar">
-                    <a href="signInPage.php" class="btn navBtn">Sign In</a>
+                    <a href="signInPage.php" class="btn navBtn" target="_blank">Sign In</a>
                     </div>';
                    
             }
@@ -56,7 +56,7 @@ session_start();
                 <div class="col-md-1"></div>
                 <div class="col-md-10 landing">
                    <h1 class="cta">Join your peers today to share and explore our vast libraries of your study material.</h1><br>
-           		    <a href="signUpPage.php" class="btn signIn">Sign Up Today</a>
+           		    <a href="signUpPage.php" class="btn signIn" target="_blank">Sign Up Today</a>
                 </div>
                 <div class="col-md-1"></div>
              </div>
