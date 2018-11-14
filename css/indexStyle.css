@@ -220,15 +220,14 @@ canvas.linkable {
   border: 2px solid white;
 }
 .fa-comments,
-.fa-cloud-upload-alt,
-.rate {
+.fa-cloud-upload-alt {
   color: white;
   font-size: 30px;
   padding: 5px;
   margin-bottom: -50%;
 }
 .rateIcon {
-  background-color: #009be4;
+  color: white;
 }
 .uploadModal {
   background-color: #d3f0f7;
