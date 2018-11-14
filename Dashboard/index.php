@@ -25,7 +25,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <a class="navbar-brand" href="../landing.php">
-            <img src="../plane.png" width="50px" height="50px" alt="">
+            <img src="../img/plane.png" width="30px" height="30px" alt="">
         </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
