@@ -4,20 +4,19 @@ include "dbh.inc.php";
 if (isset($_POST["submit"]))
 	{
         $file = $_FILES['file'];
-
+        // $userFileName = $_POST['filename'];
+        $shortDesc = $_POST['shortDesc'];
         $fileName = $_FILES['file']['name'];
+        $fileStore = "uploads/".$fileName;
         $fileTmpName = $_FILES['file']['tmp_name'];
-        $fileSize = $_FILES['file']['size'];
         $fileError = $_FILES['file']['error'];
         $fileType = $_FILES['file']['type'];
 
         $fileExt = explode('.', $fileName);
         $fileActualExt = strtolower(end($fileExt));
     
-        $allowed = array('docx', 'pdf', 'ppt', 'doc', 'pptx');
-        if(in_array($fileActualExt, $allowed)){
             if($fileError === 0){
-                $sql = mysqli_query($conn, "INSERT INTO `uploaded_notes`(`note_name`, `note_file_index`) VALUES ('".$fileName."','".$fileName."')");
+                $sql = mysqli_query($conn, "INSERT INTO `notes`(`name`, `short_desc`, `path`, `file_ext`) VALUES ('".$fileName."', '".$shortDesc."','".$fileStore."','".$fileActualExt."')");
                 if($sql){
                     $fileDestination = 'uploads/'.$fileName;
                     move_uploaded_file($fileTmpName, $fileDestination);
@@ -30,10 +29,6 @@ if (isset($_POST["submit"]))
             else{
                 echo '<div class="alert alert-danger" role="alert">An error has occurred<a href="#" class="close" data-dismiss="alert">&times;</a></div>';
             }
-
-        }else{
-            echo '<div class="alert alert-danger" role="alert">File Type cannot be uploaded!<a href="#" class="close" data-dismiss="alert">&times;</a></div>';
-        }
 }
 
 ?>

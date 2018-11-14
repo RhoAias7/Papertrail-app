@@ -1,0 +1,314 @@
+body {
+  background-color: #d3f0f7;
+  font-size: 15px;
+
+  /*	dashborad style for body*/
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  display: block;
+  /* No floating content on sides */
+}
+
+.zero {
+  height: 500px;
+}
+
+.navbar {
+  color: #00b9e4;
+  background-color: #00b9e4 !important;
+  border-radius: 0;
+}
+
+.navBtn {
+  background-color: #ffffff;
+  width: 90px;
+  color: #00b9e4;
+  float: right;
+}
+
+.navbar-toggler {
+  color: #ffffff;
+}
+
+.landing {
+  margin-top: 50px;
+  text-align: center;
+  padding: 50px;
+}
+
+.cta {
+  color: #00b9e4;
+  font-weight: 900;
+}
+
+.signIn {
+  font-weight: 500;
+  padding: 10px;
+  width: 200px;
+  float: right;
+  border-width: 2px;
+  color: white;
+  background-color: #00b9e4;
+}
+
+.signIn:hover {
+  color: #00b9e4;
+  border-color: #00b9e4;
+  background-color: white !important;
+}
+
+.sign-up {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.sign-div {
+  color: #3051a0;
+}
+
+.one {
+  background-color: #dcf8ff;
+  height: 350px;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+.what {
+  text-align: left;
+  width: 250px;
+  color: #00b9e4;
+  padding-bottom: 1px;
+  margin-bottom: 25px;
+  border: 4px;
+  border-bottom-style: solid;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+h4 {
+  color: #00b9e4;
+  padding-bottom: 15px;
+  font-weight: 300;
+}
+
+.info-image {
+  margin-top: 20px;
+}
+
+.two {
+}
+
+.tutSection {
+  margin-top: 20px;
+}
+
+.tutHeader {
+  text-align: left;
+  width: 250px;
+  color: #00b9e4;
+  border-color: white;
+  padding-bottom: 2px;
+  margin-bottom: 30px;
+  border: 4px;
+  border-bottom-style: solid;
+}
+
+i {
+  color: #00b9e4;
+}
+
+.graph {
+}
+
+.three {
+  background-color: #dcf8ff;
+  height: auto;
+}
+
+.subHeader {
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.selectSub {
+  text-align: center;
+  width: 250px;
+  color: #00b9e4;
+  padding-bottom: 2px;
+  margin-bottom: 30px;
+  border: 4px;
+  border-bottom-style: solid;
+}
+
+.card-deck {
+  margin-top: 30px;
+}
+
+.card {
+  text-align: center;
+  border-color: #e3e3e3;
+  border-radius: 0 0 5px 5px;
+  background-color: white;
+  height: 300px;
+}
+
+.card-body {
+  color: white;
+  background-color: white;
+  height: 100px;
+}
+
+.card-title {
+  text-align: center;
+  color: #00b9e4;
+}
+
+.card-link {
+  float: right;
+  font-size: 30px;
+  color: #00b9e4;
+}
+
+.card-img-top {
+  height: 190px;
+  width: 190px;
+  padding: 10px;
+  margin: auto;
+}
+
+canvas.linkable {
+  cursor: pointer;
+}
+
+#bottomRight {
+  background-color: #009be4;
+  border: 1px solid #009be4;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+#bottomCenter {
+  position: fixed;
+  bottom: 100px;
+  left: 400px;
+  height: 100px;
+  width: 500px;
+  overflow: auto;
+}
+#bottomLeft {
+  background-color: #009be4;
+  border: 1px solid #009be4;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
+}
+#bottomLeft:hover,
+#bottomRight:hover {
+  background-color: #d3f0f7;
+  border: 2px solid white;
+}
+.fa-comments,
+.fa-cloud-upload-alt {
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  margin-bottom: -50%;
+}
+.uploadModal {
+  background-color: #d3f0f7;
+  padding-top: 50px;
+}
+#formFileIcon {
+  font-size: 100px;
+  color: #009be4;
+}
+
+.uploadForm {
+  width: 40%;
+}
+#drop_zone {
+  border: #009be4 3px dashed;
+  border-radius: 5px;
+  background-color: white;
+  width: 75%;
+  height: 60%;
+  margin: auto;
+  padding: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+#file {
+  color: #4e4e4e;
+  text-align: left;
+}
+.form-control {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+#fileNameUpload {
+  width: 40%;
+}
+#fileCommentUpload {
+  width: 80%;
+}
+#fileDrop {
+  width: 40%;
+}
+#send {
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  color: white;
+  background-color: #009be4;
+}
+#send:hover {
+  border: 1px solid #009be4;
+  color: #009be4;
+  background-color: white;
+}
+
+.modal-header {
+  background-color: #00b9e4;
+}
+.fileTitle {
+  color: white;
+}
+.close {
+  color: white;
+}
+.formFileIcon {
+  margin-top: 40px;
+  color: #909090;
+  font-size: 100px;
+}
+.btnDelete {
+  color: red;
+}
+.btnDown {
+  color: limegreen;
+}
+.btnRate {
+  border: 1px #f4f4f4 solid;
+  color: white;
+}
+#per {
+  background: #38bd34;
+  width: auto;
+}
+#rel {
+  background: #00b9e4;
+  width: auto;
+}
+#irel {
+  background: #f12c53;
+  width: auto;
+}

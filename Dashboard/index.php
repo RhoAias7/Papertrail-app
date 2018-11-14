@@ -1,3 +1,4 @@
+<?php include "rate.php"?>
 <!doctype html>
 <html lang="en">
    <head>
@@ -12,7 +13,7 @@
       <script src="../stuff/js/lib/renderer.js"></script>
       <!-- <script src="main.js"></script> -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-      <link rel="stylesheet" href="../css/indexStyle.css"> 
+      <link rel="stylesheet" href="indexStyle.css"> 
    </head>
    <body>
       <nav class="navbar navbar-expand-md navbar-dark bg-primary">
@@ -67,9 +68,9 @@
 						  <div class="col-2"></div>
 						  <form class="form-group">
 						  <ul>
-							<li><input type="checkbox btnRate" name="rating">Perfect</input></li>
-						 	<li><input type="checkbox" name="vehicle" value="Bike">Relevant</input></li>
-				   			<li><input type="checkbox" name="vehicle" value="Bike">Irelevant</input></li>
+              <li><input type="checkbox" name="rating1" value="Perfect">Perfect</input></li>
+              <li><input type="checkbox" name="rating2" value="Relevant">Relevant</input></li>
+				   			<li><input type="checkbox" name="rating3" value="Irelevant">Irelevant</input></li>
 	  
 						</ul>
 						  </form>
@@ -85,8 +86,8 @@
                      <form>
                         <div class="form-group">
                            <label for="formGroupExampleInput">Have your say..</label>
-                           <input type="text" class="form-control" id="userComment" placeholder="What are your thoughts on this file?">
-							<button type="submit" class="btn sumit">Submit</button>
+                           <input type="text" name="comment" class="form-control" id="userComment" placeholder="What are your thoughts on this file?">
+							<button type="rate" name="rate" class="btn sumit">Submit</button>
                         </div>
                      </form> 
                   </div>
@@ -134,15 +135,8 @@
                      <input type="file" name="file" id="file"/>
                </div>
 				   <br>
-					 <input type="text" class="form-control" id="fileNameUpload" placeholder="Filename..">
-				   <select name="Filetype" class="form-control" id="fileDrop">
-						<option value="worddoc">Word Document</option>
-						<option value="ppoint">Power Point</option>
-						<option value="pdf">PFD</option>
-						<option value="mp4">MP4 Video</option>
-					   <option value="mp3">MP3 Audio</option>
-				  </select>
-					   <input type="text" class="form-control" id="fileCommentUpload" placeholder="Please enter a short description.">
+					 <input type="text" name="filename" class="form-control" id="fileNameUpload" placeholder="Filename..">
+					   <input type="text" name="shortDesc" class="form-control" id="fileCommentUpload" placeholder="Please enter a short description.">
 				   		<input type="checkbox" name="vehicle" value="Agree">Allow us to share your Notes.<br>
                      <button id="send" type="submit" name="submit" class="btn uploadBtn">Upload</button>
                   </form>
@@ -153,24 +147,14 @@
       </div>
       <!--Model for upload-->
       <script>
-         var sys = arbor.ParticleSystem(20);
+         var sys = arbor.ParticleSystem(5, 10, 0.1341, true, 55);
          sys.parameters({
-                gravity: false
+                gravity: true
          });
-         
          sys.renderer = Renderer("#viewport");
-         var data = {
-                nodes: {
-                       node1: {
-                              color: "#70D7FF",
-                              shape: "dot",
-                              label: "Database Slides 1",
-                              link: "uploads/pdfs/1_ADV_Database Review.pdf"
-                       },
-                },
-         };
-         
-         sys.graft(data);
+        <?php
+            include "show.php";
+        ?>
       </script>
    </body>
 
