@@ -1,9 +1,6 @@
 body {
-  <<<<<<<HEAD
-=======
-  background-color: #d3f0f7;
-  >>>>>>>ayo-branch
-  font-size: 15px;
+  <<<<<<<head=======background-color: #d3f0f7;
+  >>>>>>>ayo-branchfont-size: 15px;
 
   /*	dashborad style for body*/
   width: 100%;
@@ -229,6 +226,9 @@ canvas.linkable {
   font-size: 30px;
   padding: 5px;
   margin-bottom: -50%;
+}
+.rateIcon {
+  background-color: #009be4;
 }
 .uploadModal {
   background-color: #d3f0f7;

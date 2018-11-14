@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,10 +13,12 @@
     <script src="../stuff/js/lib/graphics.js"></script>
     <script src="../stuff/js/lib/renderer.js"></script>
     <script src="main.js"></script>
+    <script src="../script/rate.js"></script>
 
     <!-- <script src="fileRate.js"></script> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/indexStyle.css">
+    <meta charset="UTF-8"> 
 </head>
 
 <body>
@@ -39,8 +42,8 @@
             </ul>
         </div>
     </nav>
-    <li class="nav-item active">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-poll rate"></i></button>
+    <li class="nav-item rateIcon">
+        <button type="button" class="btn rateIcon" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-poll rate"></i></button>
     </li>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog dashForm" role="document">
@@ -59,8 +62,8 @@
                             <i class=" formFileIcon fas fa-file-download"></i>
 
                             <div class="fileAction col-5">
-                                <button type="button" class="btn btnDown"><i class="fas fa-file-download"></i></button>
-                                <button type="button" class="btn btnDelete"><i class="fas fa-trash-alt"></i></button>
+                                <button type="button" class="btn btnDown"><i class="fas fa-file-download"> .download</i></button>
+                                <button type="button" class="btn btnDelete"><i class="fas fa-trash-alt"> .remove</i></button>
                             </div>
                         </div>
                         <br>
