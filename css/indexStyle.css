@@ -1,8 +1,8 @@
 body {
-<<<<<<< HEAD
+  <<<<<<<HEAD
 =======
   background-color: #d3f0f7;
->>>>>>> ayo-branch
+  >>>>>>>ayo-branch
   font-size: 15px;
 
   /*	dashborad style for body*/
@@ -16,11 +16,8 @@ body {
 
 .zero {
   height: 500px;
-<<<<<<< HEAD
   background-color: white;
-  background-image: url("img/nodee.png");
-=======
->>>>>>> ayo-branch
+  background-image: url("img/node.png");
 }
 
 .navbar {
@@ -30,7 +27,6 @@ body {
 }
 
 .navBtn {
-<<<<<<< HEAD
   background-color: #d3f0f7;
   width: 90px;
   color: #00b9e4;
@@ -39,12 +35,6 @@ body {
 }
 .navbtn:hover {
   color: white;
-=======
-  background-color: #ffffff;
-  width: 90px;
-  color: #00b9e4;
-  float: right;
->>>>>>> ayo-branch
 }
 
 .navbar-toggler {
@@ -74,11 +64,7 @@ body {
 .signIn:hover {
   color: #00b9e4;
   border-color: #00b9e4;
-<<<<<<< HEAD
   background-color: #d3f0f7 !important;
-=======
-  background-color: white !important;
->>>>>>> ayo-branch
 }
 
 .sign-up {
@@ -124,10 +110,7 @@ h4 {
 }
 
 .two {
-<<<<<<< HEAD
   background-color: white;
-=======
->>>>>>> ayo-branch
 }
 
 .tutSection {
@@ -149,18 +132,9 @@ i {
   color: #00b9e4;
 }
 
-<<<<<<< HEAD
 .three {
   background-color: #dcf8ff;
   height: 1000px;
-=======
-.graph {
-}
-
-.three {
-  background-color: #dcf8ff;
-  height: auto;
->>>>>>> ayo-branch
 }
 
 .subHeader {
@@ -249,12 +223,8 @@ canvas.linkable {
   border: 2px solid white;
 }
 .fa-comments,
-<<<<<<< HEAD
 .fa-cloud-upload-alt,
 .rate {
-=======
-.fa-cloud-upload-alt {
->>>>>>> ayo-branch
   color: white;
   font-size: 30px;
   padding: 5px;
@@ -338,7 +308,6 @@ canvas.linkable {
   color: white;
 }
 #per {
-<<<<<<< HEAD
   color: #38bd34;
   width: auto;
 }
@@ -358,16 +327,4 @@ canvas.linkable {
 }
 #userComment {
   visibility: visible;
-=======
-  background: #38bd34;
-  width: auto;
-}
-#rel {
-  background: #00b9e4;
-  width: auto;
-}
-#irel {
-  background: #f12c53;
-  width: auto;
->>>>>>> ayo-branch
 }
