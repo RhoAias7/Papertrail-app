@@ -44,7 +44,7 @@ session_start();
             else {
                    
                    echo '<div class="navbar-collapse collapse" id="collapsingNavbar">
-                    <a href="signInPage.php" class="btn navBtn" data-toggle="modal" data-target="#SignInModal">Sign In</a>
+                    <a href="signInPage.php" class="btn navBtn">Sign In</a>
                     </div>';
                    
             }
@@ -56,7 +56,7 @@ session_start();
                 <div class="col-md-1"></div>
                 <div class="col-md-10 landing">
                    <h1 class="cta">Join your peers today to share and explore our vast libraries of your study material.</h1><br>
-           		<button type="button" class="btn signIn"> <a href="signUpPage.php">Sign Up Today</a></button>
+           		    <a href="signUpPage.php" class="btn signIn">Sign Up Today</a>
                 </div>
                 <div class="col-md-1"></div>
              </div>
@@ -207,7 +207,7 @@ session_start();
                             node4: {
                                    "color": "#00b9e4",
                                    "shape": "dot",
-                                   "label": "Sign Me Up",
+                                   "label": "SIGN ME UP",
                                    link: "signUpPage.php"
 
                             },

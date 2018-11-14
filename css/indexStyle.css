@@ -1,5 +1,4 @@
 body {
-  background-color: #d3f0f7;
   font-size: 15px;
 
   /*	dashborad style for body*/
@@ -13,6 +12,8 @@ body {
 
 .zero {
   height: 500px;
+  background-color: white;
+  background-image: url("img/nodee.png");
 }
 
 .navbar {
@@ -22,10 +23,14 @@ body {
 }
 
 .navBtn {
-  background-color: #ffffff;
+  background-color: #d3f0f7;
   width: 90px;
   color: #00b9e4;
+  font-weight: 500;
   float: right;
+}
+.navbtn:hover {
+  color: white;
 }
 
 .navbar-toggler {
@@ -52,11 +57,10 @@ body {
   color: white;
   background-color: #00b9e4;
 }
-
 .signIn:hover {
   color: #00b9e4;
   border-color: #00b9e4;
-  background-color: white !important;
+  background-color: #d3f0f7 !important;
 }
 
 .sign-up {
@@ -102,6 +106,7 @@ h4 {
 }
 
 .two {
+  background-color: white;
 }
 
 .tutSection {
@@ -123,12 +128,9 @@ i {
   color: #00b9e4;
 }
 
-.graph {
-}
-
 .three {
   background-color: #dcf8ff;
-  height: auto;
+  height: 1000px;
 }
 
 .subHeader {
@@ -217,7 +219,8 @@ canvas.linkable {
   border: 2px solid white;
 }
 .fa-comments,
-.fa-cloud-upload-alt {
+.fa-cloud-upload-alt,
+.rate {
   color: white;
   font-size: 30px;
   padding: 5px;
@@ -301,14 +304,23 @@ canvas.linkable {
   color: white;
 }
 #per {
-  background: #38bd34;
+  color: #38bd34;
   width: auto;
 }
 #rel {
-  background: #00b9e4;
+  color: #00b9e4;
   width: auto;
 }
 #irel {
-  background: #f12c53;
+  color: #f12c53;
   width: auto;
+}
+.rateLi {
+  list-style: none;
+  display: inline;
+  font-size: 20px;
+  padding: 5px;
+}
+#userComment {
+  visibility: visible;
 }

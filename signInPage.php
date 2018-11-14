@@ -11,7 +11,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="css/form.css"/>
    </head>
-   
+
    <body>
       <div class="container">
       <form action="regSystem/login.php" method="post">
@@ -22,7 +22,7 @@
             </div>
          </div>
          <div class="row">
-            <img src="/img/plane.png">
+            <img src="img/plane.png">
          </div>
          <div class="signInDrop">
             <div class="form-group row">
