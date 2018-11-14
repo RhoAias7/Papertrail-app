@@ -26,7 +26,7 @@ session_start();
 <!--NAVIGATION-->
       <nav class="navbar navbar-expand-md navbar bg-primary">
          <a class="navbar-brand" href="landing.php">
-            <img src="../../img/plane.png" height="30px">
+            <img src="img/plane.png" height="30px">
          </a> 
          
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
@@ -56,7 +56,7 @@ session_start();
                 <div class="col-md-1"></div>
                 <div class="col-md-10 landing">
                    <h1 class="cta">Join your peers today to share and explore our vast libraries of your study material.</h1><br>
-           		<button type="button" class="btn signIn" data-toggle="modal" data-target="#exampleModal"><a href="signUpPage.php">Sign Up Today</a></button>
+           		<button type="button" class="btn signIn"> <a href="signUpPage.php">Sign Up Today</a></button>
                 </div>
                 <div class="col-md-1"></div>
              </div>
@@ -72,11 +72,11 @@ session_start();
                       <h4>Share your notes ✓</h4>
                       <h4>View your peers' notes ✓</h4>
                       <h4>Rate uploaded material ✓</h4>
-                      <h4>Quickly discover notes tailored for you ✓</h4>
+                      <h4>Quickly discover the best notes for you ✓</h4>
                    </div>
                 </div>
                 <div class="col-md-5 info-image">
-                   <img src="../../img/nodes.png" width="100%" height="100%">
+                   <img src="img/nodes.png" width="100%" height="100%">
                 </div>
              </div>
           </div>
@@ -121,7 +121,7 @@ session_start();
       
       <div class="card-deck col-8">
         <div class="card">
-          <img class="card-img-top" src="../../img/java.png" alt="Card image cap" >
+          <img class="card-img-top" src="img/java.png" alt="Card image cap" >
           <div class="card-body">
             <h3 class="card-title">Java</h3>
             <a href="#" class="card-link">→</a>
@@ -129,7 +129,7 @@ session_start();
         </div>
         
         <div class="card">
-          <img class="card-img-top" src="../../img/csharp.png" alt="Card image cap" >
+          <img class="card-img-top" src="img/csharp.png" alt="Card image cap" >
           <div class="card-body">
             <h3 class="card-title">C#</h3>
             <a href="#" class="card-link">→</a>
@@ -137,7 +137,7 @@ session_start();
         </div>
         
         <div class="card">
-          <img class="card-img-top" src="../../img/python.png" alt="Card image cap">
+          <img class="card-img-top" src="img/python.png" alt="Card image cap">
           <div class="card-body">
             <h3 class="card-title">Python</h3>
             <a href="#" class="card-link">→</a>
@@ -152,21 +152,21 @@ session_start();
       <div class="col-2"></div>
       <div class="card-deck col-8">
         <div class="card">
-          <img class="card-img-top" src="../../img/mysql.png" alt="Card image cap" >
+          <img class="card-img-top" src="img/mysql.png" alt="Card image cap" >
           <div class="card-body">
             <h3 class="card-title">MySQL</h3>
             <a href="Dashboard/index.php" class="card-link">→</a>
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="../../img/plane.png" alt="Card image cap" >
+          <img class="card-img-top" src="img/plane.png" alt="Card image cap" >
           <div class="card-body">
             <h3 class="card-title">SubjectX</h3>
             <a href="#" class="card-link">→</a>
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="../../img/plane.png" alt="Card image cap">
+          <img class="card-img-top" src="img/plane.png" alt="Card image cap">
           <div class="card-body">
             <h3 class="card-title">SubjectY</h3>
             <a href="#" class="card-link">→</a>

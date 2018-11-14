@@ -12,112 +12,133 @@
       <script src="../stuff/js/lib/renderer.js"></script>
       <!-- <script src="main.js"></script> -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-      <!-- <link rel="stylesheet" href="../../indexStyle.css"> -->
+      <link rel="stylesheet" href="indexStyle.css">
    </head>
    <body>
       <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-         <a class="navbar-brand" href="#">
+         <a class="navbar-brand" href="../landing.php">
          <img src="log.png" width="50px" height="50px" alt="">
          </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
          <span class="navbar-toggler-icon"></span>
          </button>
          <div class="navbar-collapse collapse" id="collapsingNavbar">
             <ul class="navbar-nav ml-auto">
-               <li class="nav-item active">
-                  <a class="nav-link" href="../landing.php" data-target="#myModal" data-toggle="modal">Home</a>
-               </li>
-               <li class="nav-item active">
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Rating</button>               
-               </li>
+               <!--
+                  <li class="nav-item active">
+                     <a class="nav-link" href="../landing.php" data-target="#myModal" data-toggle="modal">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Rating</button>               
+                  </li>
+                  -->
             </ul>
          </div>
       </nav>
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Side model</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-               <div class="modal-body">
-                  <div class="container-fluid">
-                     <div class="row">
-                        <div class="col-md-3">
-                           <button type="button" class="btn btn-success" id="good">Good!</button>
-                        </div>
-                        <div class="col-md-3">
-                           <button type="button" class="btn btn-warning" id="meh">Meh :/</button>
-                        </div>
-                        <div class="col-md-3">
-                           <button type="button" class="btn btn-danger" id="bad">Terriable :(</button>
-                        </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch Side Hoe
+</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                   <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Side Hoe</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                          </button>
+                                   </div>
+                                   <div class="modal-body">
+                                          <div class="container-fluid">
+                                                 <div class="row"><form method="post" action="">
+                                                        <div class="col-md-3">
+                                                                <label>Good!</label>
+                                                               <input type="radio" value="good" name="insert1">
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                              <label>Meh :/</label>
+                                                               <input type="radio" value="meh" name="insert1">
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                                <label>Terriable :(</label>
+                                                               <input type="radio"  value="bad" name="insert1">
+                                                        </div>
+                                                 </div>
+                                                 
+                                                        <div class="form-group">
+                                                               <label for="formGroupExampleInput">What do you think</label>
+                                                               <input type="text" class="form-control" name="comment"  placeholder="Comment">
+                                                        </div>
+                                                 
+
+                                                 <div class="row">
+                                                        <div class="col-md-3">
+                                                               <button type="button" class="btn btn-primary">Download</button>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                               <button type="button" class="btn btn-danger">Delete</button>
+                                                        </div>
+                                                 </div>
+
+                                          </div>
+                                   </div>
+                                   <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          <!--<button type="button" method = "post" name = "save" class="btn btn-primary">Save changes</button>
+                                            -->
+                                            <input type="submit" />
+                                   </div></form>
+                            </div>
                      </div>
-                     <form>
-                        <div class="form-group">
-                           <label for="formGroupExampleInput">What do you think?</label>
-                           <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Comment">
-                        </div>
-                     </form>
-                     <div class="row">
-                        <div class="col-md-3">
-                           <button type="button" class="btn btn-primary">Download</button>
-                        </div>
-                        <div class="col-md-3">
-                           <button type="button" class="btn btn-danger">Delete</button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-               </div>
-            </div>
-         </div>
-      </div>
+              </div>
       <div class="container-fluid">
          <div class="row">
             <div class="">
-               <canvas id="viewport" width="1366" height="568"></canvas>
+               <canvas id="viewport" width="1366" height="768"></canvas>
             </div>
          </div>
          <div class="row">
             <div class="col-sm">
-               <button type="button" id="bottomLeft" class="rounded-circle btn btn-primary" data-toggle="modal" data-target="#bottomLeft1"><i class="fas fa-plus"></i></button>
+               <button type="button" id="bottomLeft"  class="dashControl" data-toggle="modal" data-target="#bottomLeft1">
+                  <p><i class="fas fa-cloud-upload-alt"></i> </p>
+               </button>
             </div>
             <div class="col-sm" id="bottomCenter">
-              <?php include "upload.php";?>
+            <?php include "upload.php"; ?>
+            <?php include "rate.php"; ?>
             </div>
             <div class="col-sm">
-               <button type="button" id="bottomRight" class="rounded-circle btn btn-primary"><i class="fas fa-comments"></i></button>
+               <button type="button" id="bottomRight" class="dashControl">
+                  <p><i class="fas fa-comments"></i></p>
+               </button>
             </div>
          </div>
       </div>
       <!--Model for upload-->
       <!-- Modal -->
       <div class="modal fade" id="bottomLeft1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog" role="document">
+         <div class="modal-dialog uploadForm" role="document">
             <div class="modal-content">
                <div class="modal-header">
-                  <h1>Upload Notes</h1>
+                  <h5 class="fileTitle">Upload your file here</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                   </button>
                </div>
-               <div class="modal-body">
-               </div>
-               <div class="modal-body" id="drop_zone" ondrop="drag_drop(event)" ondragover="return false">
-                  <i class="fas fa-file-upload"></i>
-                  <form method="post" role="form" enctype="multipart/form-data">
-                     <input type="file" name="file" id="file" />
-                     <button id="send" type="submit" name="submit" class="btn btn-success">Submit</button>
+               <div class="modal-body uploadModal">
+                  <div class="modal-body" id="drop_zone">
+                     <i class="fas fa-cloud-upload-alt" id="formFileIcon"></i>                
+                     <form method="post" role="form" enctype="multipart/form-data">
+                        <input type="file" name="file" id="file"/>
+                  </div>
+                  <br>
+                  <input type="text" name="filename" class="form-control" id="fileNameUpload" placeholder="Filename..">
+                  <input type="text" name="shortDesc" class="form-control" id="fileCommentUpload" placeholder="Please enter a short description.">
+                  <input type="checkbox" name="vehicle" value="Agree">Allow us to share your Notes.<br>
+                  <button id="send" type="upload" name="upload" class="btn uploadBtn">Upload</button>
                   </form>
-               </div>
-               <p id="fileName"></p>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Share</button>
+                  <p id="fileName"></p>
                </div>
             </div>
          </div>
@@ -125,65 +146,11 @@
       <!--Model for upload-->
       <script>
          var sys = arbor.ParticleSystem(5, 10, 0.1341, true, 55);
-         sys.parameters({
-                gravity: true
-         });
+         sys.parameters({gravity: true});
          sys.renderer = Renderer("#viewport");
-
-          <?php
-              include "show.php";
-          ?>
-
-         //console.log("hello");
-
+         <?php
+            include "show.php";
+            ?>
       </script>
    </body>
-   <style type="text/css">
-      canvas.linkable{
-      cursor: pointer;
-      }
-      html,
-      body {
-      width: 100%;
-      height: 100%;
-      margin: 0px;
-      border: 0;
-      overflow: hidden;
-      /*  Disable scrollbars */
-      display: block;
-      /* No floating content on sides */
-      }
-      #bottomRight {
-      position: fixed;
-      bottom: 100px;
-      right: 100px;
-      height: 100px;
-      width: 100px;
-      font-size: 50px;
-      }
-      #bottomCenter {
-      position: fixed;
-      bottom: 100px;
-      left: 400px;
-      height: 100px;
-      width: 500px;
-      overflow:auto;
-      }
-      #bottomLeft {
-      position: fixed;
-      bottom: 100px;
-      left: 100px;
-      height: 100px;
-      width: 100px;
-      font-size: 50px;
-      }
-      #drop_zone {
-      border: #007BFF 2px dashed;
-      width: 100%;
-      height: 100%;
-      padding: 50px;
-      font-size: 20px;
-      text-align: center;
-      }
-   </style>
 </html>

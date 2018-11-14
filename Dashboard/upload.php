@@ -1,10 +1,11 @@
 <?php
 include "dbh.inc.php";
 
-if (isset($_POST["submit"]))
+if (isset($_POST["upload"]))
 	{
         $file = $_FILES['file'];
-
+        $userFileName = $_POST['filename'];
+        $shortDesc = $_POST['shortDesc'];
         $fileName = $_FILES['file']['name'];
         $fileStore = "uploads/".$fileName;
         $fileTmpName = $_FILES['file']['tmp_name'];
@@ -15,7 +16,7 @@ if (isset($_POST["submit"]))
         $fileActualExt = strtolower(end($fileExt));
     
             if($fileError === 0){
-                $sql = mysqli_query($conn, "INSERT INTO `notes`(`name`, `path`) VALUES ('".$fileName."','".$fileStore."')");
+                $sql = mysqli_query($conn, "INSERT INTO `notes`(`name`, `short_desc`, `path`, `file_ext`) VALUES ('".$userFileName."', '".$shortDesc."','".$fileStore."','".$fileActualExt."')");
                 if($sql){
                     $fileDestination = 'uploads/'.$fileName;
                     move_uploaded_file($fileTmpName, $fileDestination);
@@ -29,5 +30,4 @@ if (isset($_POST["submit"]))
                 echo '<div class="alert alert-danger" role="alert">An error has occurred<a href="#" class="close" data-dismiss="alert">&times;</a></div>';
             }
 }
-
 ?>
