@@ -250,16 +250,26 @@ canvas.linkable {
 }
 .fa-comments,
 <<<<<<< HEAD
+<<<<<<< HEAD
 .fa-cloud-upload-alt,
 .rate {
 =======
 .fa-cloud-upload-alt {
 >>>>>>> ayo-branch
+=======
+.fa-cloud-upload-alt {
+>>>>>>> bc4483b39318efb253a3a9fddace4916f9d58541
   color: white;
   font-size: 30px;
   padding: 5px;
   margin-bottom: -50%;
 }
+<<<<<<< HEAD
+=======
+.rateIcon {
+  color: white;
+}
+>>>>>>> bc4483b39318efb253a3a9fddace4916f9d58541
 .uploadModal {
   background-color: #d3f0f7;
   padding-top: 50px;

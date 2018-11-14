@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<link rel="shortcut icon" type="image/png" class="img-fluid" href="../../img/plane.png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Papertrail - Dashboard</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -24,7 +25,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <a class="navbar-brand" href="../landing.php">
-            <img src="log.png" width="50px" height="50px" alt="">
+            <img src="../img/plane.png" width="30px" height="30px" alt="">
         </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,9 +43,7 @@
             </ul>
         </div>
     </nav>
-    <li class="nav-item rateIcon">
-        <button type="button" class="btn rateIcon" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-poll rate"></i></button>
-    </li>
+        <button type="button" class="btn btn-primary rateIcon" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-poll rate"></i></button>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog dashForm" role="document">
             <div class="modal-content">
