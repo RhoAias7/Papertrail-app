@@ -150,7 +150,6 @@
          var sys = arbor.ParticleSystem(5, 10, 0.1341, true, 55);
          sys.parameters({gravity: true});
          sys.renderer = Renderer("#viewport");
-         $('.linkable').tooltip(options);
          <?php
             include "show.php";
             ?>
