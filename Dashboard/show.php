@@ -13,7 +13,7 @@
         $note_id = $row['note_id'];
         $name = $row['name'];
         $path = $row['path'];
-        echo 'sys.addNode("'.$note_id.'", {label: "'.$name.'", color: "#009be4", shape: "dot", link: });';
+        echo 'sys.addNode("'.$note_id.'", {label: "'.$name.'", color: "#009be4", shape: "dot", link: "'.$path.'"});';
         echo 'console.log(sys.getNode("'.$note_id.'"));';
     }
 
