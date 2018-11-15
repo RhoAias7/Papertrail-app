@@ -37,7 +37,7 @@
         }
         $user_id = $row['user_id'];
         $note_id = $row['note_id'];
-        echo 'sys.addEdge("id'.$user_id.'", "'.$note_id.'", {color: "'.$rating.'", length:.7});';
+        echo 'sys.addEdge("id'.$user_id.'", "'.$note_id.'", {color: "'.$rating.'", length:.8});';
         echo 'console.log(sys.getEdges("id'.$user_id.'", "'.$note_id.'"));';
         
     }
