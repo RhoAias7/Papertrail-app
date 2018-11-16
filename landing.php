@@ -56,11 +56,7 @@ session_start();
                 <div class="col-md-1"></div>
                 <div class="col-md-10 landing">
                    <h1 class="cta">Join your peers today to share and explore our vast libraries of your study material.</h1><br>
-<<<<<<< HEAD
            		    <a href="signUpPage.php" class="btn signIn">Sign Up Today</a>
-=======
-           		<button type="button" class="btn signIn"> <a href="signUpPage.php">Sign Up Today</a></button>
->>>>>>> ayo-branch
                 </div>
                 <div class="col-md-1"></div>
              </div>
