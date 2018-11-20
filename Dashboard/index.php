@@ -14,7 +14,7 @@
     <script src="../stuff/js/lib/graphics.js"></script>
     <script src="../stuff/js/lib/renderer.js"></script>
     <!-- <script src="main.js"></script> -->
-    <script src="../script/rate.js"></script>
+    <!-- <script src="../script/rate.js"></script> -->
 
     <!-- <script src="fileRate.js"></script> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -35,65 +35,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="../landing.php" data-target="#myModal" data-toggle="modal">Home</a>
                 </li>
-            <!--
-               <li class="nav-item active">
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Rating</button>               
-               </li>
-            -->
             </ul>
         </div>
     </nav>
-        <button type="button" class="btn btn-primary rateIcon" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-poll rate"></i></button>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog dashForm" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="fileTitle">Filename.doc</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-5"></div>
-                            <i class=" formFileIcon fas fa-file-download"></i>
-
-                            <div class="fileAction col-5">
-                                <button type="button" class="btn btnDown"><i class="fas fa-file-download"> .download</i></button>
-                                <button type="button" class="btn btnDelete"><i class="fas fa-trash-alt"> .remove</i></button>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="fileDesc">
-                            <p id="fileDescription">This is filler text, this will contain the quick description of the file inserted when a user uploads a doc.</p>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-2"></div>
-<!--start of rating form--> 
-                            <form class="form-group" method="post" role="form" action="user_rating.php">
-                                <ul>
-                                    <p>Select one:</p>
-                                    <li class="rateLi" id="per" ><input class="check" type="radio" name="rate">Perfect</li>
-                                    <li class="rateLi" id="rel"><input class="check" type="radio" name="rate">Relevant</li>
-                                    <li class="rateLi" id="irel"><input class="check" type="radio" name="rate">Irelevant</li>
-                                </ul>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <label for="formGroupExampleInput">Have your say..</label>
-                            <input type="text" class="form-control" id="userComment" placeholder="What are your thoughts on this file?" name="usrComment">
-                            <button type="submit" class="btn submit">Submit</button>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="container-fluid">
         <div class="row">
             <div class="">

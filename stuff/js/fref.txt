@@ -193,7 +193,8 @@
                 // var myDiv = document.createElement('div')
                 // myDiv.innerHTML = '<h1>modal</h1>'
                 // document.body.appendChild(myDiv)
-                document.write(selected.node._id)
+                window.confirm(selected.node._id)
+
                 // window.open(link, "_blank")
               }
               return false
