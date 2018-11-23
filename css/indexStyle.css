@@ -9,7 +9,9 @@ body {
   display: block;
   /* No floating content on sides */
 }
-
+.container-fluid {
+  width: 100%;
+}
 .zero {
   height: 500px;
   background-color: white;
@@ -35,6 +37,10 @@ body {
 
 .navbar-toggler {
   color: #ffffff;
+}
+.navbar-toggler-icon,
+.navbar-toggler {
+  color: white;
 }
 
 .landing {
@@ -96,9 +102,9 @@ body {
 }
 
 h4 {
-  color: #00b9e4;
+  color: #333;
   padding-bottom: 15px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .info-image {
@@ -213,10 +219,10 @@ canvas.linkable {
 .panel {
   width: 100%;
 }
-h4 {
+/* h4 {
   color: white;
   font-weight: 500;
-}
+} */
 .panelButton {
   width: 50%;
   height: 50%;
@@ -420,6 +426,7 @@ styling for rate form
 .formContainer {
   display: block;
   float: right;
+  margin-bottom: 0;
 }
 .btn-info {
   width: 90%;

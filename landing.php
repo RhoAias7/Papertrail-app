@@ -23,6 +23,7 @@ session_start();
    </head>
    
    <body>
+
 <!--NAVIGATION-->
       <nav class="navbar navbar-expand-md navbar bg-primary">
          <a class="navbar-brand" href="landing.php">
@@ -30,6 +31,8 @@ session_start();
          </a> 
          
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>
          </button>
          <?php 
@@ -54,7 +57,7 @@ session_start();
           <div class="container-fluid zero">
              <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-md-10 landing">
+                <div class="col-md-10 col-sm-12 col-12 landing">
                    <h1 class="cta">Join your peers today to share and explore our vast libraries of your study material.</h1><br>
            		    <a href="signUpPage.php" class="btn signIn">Sign Up Today</a>
                 </div>
@@ -63,86 +66,89 @@ session_start();
           </div>
         
         <!--DESCRIPTION-->
-          <div class="container-fluids one">
-             <div class="row">
-        		 <div class="col-1"></div>
-                <div class="col-md-6 info text-center">
-                   <h3 class="what">What is PaperTrail?</h3>
-                   <div class="leftAlign">
-                      <h4>Share your notes ✓</h4>
-                      <h4>View your peers' notes ✓</h4>
-                      <h4>Rate uploaded material ✓</h4>
+         <div class="container-fluid one">
+            <div class="row">
+
+               <div class="col-md-6 col-sm-12 col-12 info-image">
+                  <img src="img/nodes.png" width="100%" height="100%">
+               </div>
+
+               <div class="col-md-1"></div>
+
+               <div class="col-md-5 col-sm-12 col-12 info text-center">
+                  <h3 class="what">What is PaperTrail?</h3>
+                  <div class="leftAlign">
+                     <h4>Share your notes ✓</h4>
+                     <h4>View your peers' notes ✓</h4>
+                     <h4>Rate uploaded material ✓</h4>
                       <h4>Quickly discover the best notes for you ✓</h4>
-                   </div>
-                </div>
-                <div class="col-md-5 info-image">
-                   <img src="img/nodes.png" width="100%" height="100%">
-                </div>
-             </div>
-          </div>
-        <!--TUTORIAL-->
-          <div class="container-fluid two">
-             <div class="row">
-        		 <div class="col-1"></div>
-        		 <div class="col-5 tutSection">
-        			<h3 class="tutHeader">How Does It Work?</h3>
-        			<div class="tutText">
-        				<p>Using PaperTrail is very easy</p>
-        				<p>After selecting your subject, you will be taken to the <i>Subject Canvas.</i> 
-        				   Here you will find the core of PaperTrail, a network of study notes and all of your peers interactions.
-        				   <li>Uploaded material is represtented as circle <i>Nodes</i></li>
-        				   <li>Users that have interacted with a file are respresented by a <i style="color:#ffcc00">Block</i></li>
-        				   <li>Comments can be viewed when you hover over an <i style="color:#38bd34">Edge</i> denoted as a link</li>
-        				</p>
-        				<p>PaperTrail uses visualization to make it easier for you to decide what notes you want to downloand and use<br>
-        				   There are 3 ratings you can give an uploaded material:
-        				   <ol class="tutRate" style="color:#38bd34"><b >Perfect:</b> represented by a Green Edge</ol>
-        				   <ol class="tutRate" style="color:#00b9e4"><b >Relevant:</b> represented by a Blue Edge</ol>
-        				   <ol class="tutRate" style="color:#f12c2c"><b >Irrelevant:</b> represented by a Red Edge</ol>
-        				</p>
-        			</div> 
-        		 </div>
-        	  
-        		 <div class="col-6 graph">
-        			<div>
-                  <canvas id="sitemap" width="400" height="400"></canvas>
-        			</div>
-        		  </div>
-             </div>
-           </div>
-        <br>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+        <!--TUTORIAL TEXT-->
+         <div class="container-fluid two">
+            <div class="row">
+
+               <div class="col-md-1"></div>
+
+               <div class="col-md-5 col-sm-12 col-12 tutSection">
+                  <h3 class="tutHeader">How Does It Work?</h3>
+                  <div class="tutText">
+                     <p>Using PaperTrail is very easy,</p>
+                     <p>After selecting your subject you will be taken to the <i>Subject Canvas.</i> Here you will find the core of PaperTrail, a network of study notes and all of your peers interactions.
+                     <li>Uploaded material is represtented as circle <i>Nodes,</i></li>
+                     <li>Users that have interacted with a file are respresented by a <i style="color:#ffcc00">Block,</i></li>
+                     <li>Comments can be viewed when you hover over an <i style="color:#38bd34">Edge</i> denoted as a link.</li>
+                     </p>
+                     <p>PaperTrail uses visualization to make it easier for you to decide what notes you want to downloand and use<br>There are 3 ratings you can give an uploaded material:
+                     <ol class="tutRate" style="color:#38bd34"><b >Perfect:</b> represented by a Green Edge,</ol>
+                     <ol class="tutRate" style="color:#00b9e4"><b >Relevant:</b> represented by a Blue Edge,</ol>
+                     <ol class="tutRate" style="color:#f12c2c"><b >Irrelevant:</b> represented by a Red Edge.</ol>
+                     </p>
+                  </div> 
+               </div>
+<!--TUTORIAL GRAPH-->
+               <div class="col-md-6 col-sm-12 col-12 graph">
+                  <div><canvas id="sitemap" width="400" height="400"></canvas></div>
+               </div>
+
+            </div>
+         </div>
 
 <!--SUBJECT SELECITON-->
 <div class="container-fluid three">
    <div class="row subHeader"><h3 class="selectSub">Choose your subject <?php if (isset($_SESSION['userUid'])) { echo $_SESSION['userUid']; }?></h3></div> 
    <div class="row">
       
-      <div class="col-2"></div>
+      <div class="col-md-2"></div>
       
-      <div class="card-deck col-8">
+      <div class="card-deck col-md-8">
         <div class="card">
-          <img class="card-img-top" src="img/java.png" alt="Card image cap" >
+          <img class="card-img-top img-fluid" src="img/java.png" alt="Card image cap" >
           <div class="card-body">
             <h3 class="card-title">Java</h3>
-            <a href="#" class="card-link">→</a>
+            <a href="Dashboard/index.php" class="card-link">→</a>
           </div>
         </div>
         
         <div class="card">
-          <img class="card-img-top" src="img/csharp.png" alt="Card image cap" >
+          <img class="card-img-top img-fluid" src="img/csharp.png" alt="Card image cap" >
           <div class="card-body">
             <h3 class="card-title">C#</h3>
-            <a href="#" class="card-link">→</a>
+            <a href="Dashboard/index.php" class="card-link">→</a>
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="img/mysql.png" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="img/mysql.png" alt="Card image cap">
           <div class="card-body">
             <h3 class="card-title">MySQL</h3>
-            <a href="#" class="card-link">→</a>
+            <a href="Dashboard/index.php" class="card-link">→</a>
            </div>
          </div>
       </div>
+      
    </body>
    
  <script type="text/javascript">
