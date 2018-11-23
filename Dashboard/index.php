@@ -15,14 +15,13 @@
     <script src="../stuff/js/lib/renderer.js"></script>
     <!-- <script src="main.js"></script> -->
     <script src="../script/rate.js"></script>
-
     <!-- <script src="fileRate.js"></script> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/indexStyle.css">
     <meta charset="UTF-8"> 
 </head>
 
-<body>
+<body class="dashboard-body">
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <a class="navbar-brand" href="../landing.php">
             <img src="../img/plane.png" width="30px" height="30px" alt="">
@@ -31,11 +30,11 @@
         </button>
         <div class="navbar-collapse collapse" id="collapsingNavbar">
             <ul class="navbar-nav ml-auto">
-
+            <!--
                 <li class="nav-item active">
                     <a class="nav-link" href="../landing.php" data-target="#myModal" data-toggle="modal">Home</a>
                 </li>
-            <!--
+            
                <li class="nav-item active">
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Rating</button>               
                </li>
@@ -43,7 +42,28 @@
             </ul>
         </div>
     </nav>
-        <button type="button" class="btn btn-primary rateIcon" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-poll rate"></i></button>
+
+<!--  Control panel-->
+    <div class="controlPanel row">
+        <div class="panel-top panel row">
+            <button type="button"  data-toggle="modal" data-target="#bottomLeft1" class="panelButton">
+                  <i class="fas fa-cloud-upload-alt panelIcon"></i>
+               </button>
+            </div>
+
+        <div class="panel-bottom panel row">
+            <button type="button" class="panelButton">
+                <i class="fas fa-comments panelIcon"></i>
+            </button>
+        </div>
+    </div>
+    
+    
+
+    <div class="parallax-layer">
+        
+    <button type="button" class="btn btn-primary rateIcon" data-toggle="modal" data-target="#exampleModal">Rate</i></button>
+<!--rating--> 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog dashForm" role="document">
             <div class="modal-content">
@@ -72,7 +92,7 @@
 
                         <div class="row">
                             <div class="col-2"></div>
-<!--start of rating form--> 
+
                             <form class="form-group" method="post" role="form" action="user_rating.php">
                                 <ul>
                                     <p>Select one:</p>
@@ -93,30 +113,22 @@
             </div>
         </div>
     </div>
-
+<!-- end of rating -->
     <div class="container-fluid">
         <div class="row">
-            <div class="">
+            <div>
                 <canvas id="viewport" width="1366" height="768"></canvas>
             </div>
          </div>
+<!--main body -->
          <div class="row">
-            <div class="col-sm">
-               <button type="button" id="bottomLeft"  class="dashControl" data-toggle="modal" data-target="#bottomLeft1">
-                  <p><i class="fas fa-cloud-upload-alt"></i> </p>
-               </button>
-            </div>
-            <div class="col-sm" id="bottomCenter">
-            <?php include "upload.php"; ?>
-            <?php include "rate.php"; ?>
-            </div>
-            <div class="col-sm">
-               <button type="button" id="bottomRight" class="dashControl">
-                  <p><i class="fas fa-comments"></i></p>
-               </button>
+            <div class="col-12" id="bottomCenter"><!-- center-->
+                <?php include "upload.php"; ?>
+                <?php include "rate.php"; ?>
             </div>
          </div>
       </div>
+<!--MODALS -->
       <!--Model for upload-->
       <!-- Modal -->
       <div class="modal fade" id="bottomLeft1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -144,6 +156,7 @@
                </div>
             </div>
          </div>
+      </div>
       </div>
       <!--Model for upload-->
       <script>

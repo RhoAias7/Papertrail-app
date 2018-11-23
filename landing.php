@@ -202,15 +202,14 @@ session_start();
                             node3: {
                                    "color": "#ffcc00",
                                    "shape": "box",
-                                   "label": "User_6"
+                                   "label": "User_3"
                             },
                             node4: {
                                    "color": "#00b9e4",
                                    "shape": "dot",
                                    "label": "SIGN ME UP",
-                                   link: "signUpPage.php"
-
-                            },
+                                   "link": "signUpPage.php"
+                            }
                      },
                       edges: {
                           node4: {
