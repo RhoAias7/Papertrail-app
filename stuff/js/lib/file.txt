@@ -1,3 +1,4 @@
+
 (function() {
 
   Renderer = function(canvas) {
@@ -11,26 +12,9 @@
       init: function(system) {
         particleSystem = system
         particleSystem.screenSize(canvas.width, canvas.height)
-        particleSystem.screenPadding(36, 60, 36, 60)
+        particleSystem.screenPadding(40)
 
-        $(window).resize(that.resize)
-        that.resize()
         that.initMouseHandling()
-
-
-      },
-
-       resize: function() {
-        canvas.width = $(window).width()
-        canvas.height = $(window).height()
-        sys.screen({
-          size: {
-            width: canvas.width,
-            height: canvas.height
-          }
-        })
-        _vignette = null
-        that.redraw()
       },
 
       redraw: function() {
@@ -88,7 +72,7 @@
         })
 
 
-        // draw the edges
+        // draw the qs
         particleSystem.eachEdge(function(edge, pt1, pt2) {
           // edge: {source:Node, target:Node, length:#, data:{}}
           // pt1:  {x:#, y:#}  source position in screen coords
@@ -173,7 +157,8 @@
             }
             return false
           },
-          clicked: function(e) {
+          clicked: function(e) {        
+            
             var pos = $(canvas).offset();
             _mouseP = arbor.Point(e.pageX - pos.left, e.pageY - pos.top)
             nearest = particleSystem.nearest(_mouseP);
@@ -189,12 +174,19 @@
                   path: link.substr(1)
                 })
               } else {
+                window.alert();
+              
+                var myDiv = document.createElement('div')
+                myDiv.innerHTML = '<h1>modal</h1>'
 
-                // var myDiv = document.createElement('div')
-                // myDiv.innerHTML = '<h1>modal</h1>'
-                // document.body.appendChild(myDiv)
-                document.write(selected.node._id)
-                // window.open(link, "_blank")
+
+                document.body.appendChild(myDiv)
+                
+               $('#exampleModal').modal('show')
+                  
+                
+                //window.confirm(selected.node._id)
+                //window.open(link, "_blank")
               }
               return false
             }

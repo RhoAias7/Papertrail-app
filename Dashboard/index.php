@@ -18,7 +18,7 @@
     <!-- <script src="fileRate.js"></script> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/indexStyle.css">
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
 </head>
 
 <body class="dashboard-body">
@@ -34,9 +34,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="../landing.php" data-target="#myModal" data-toggle="modal">Home</a>
                 </li>
-            
+
                <li class="nav-item active">
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Rating</button>               
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Rating</button>
                </li>
             -->
             </ul>
@@ -57,13 +57,13 @@
             </button>
         </div>
     </div>
-    
-    
+
+
 
     <div class="parallax-layer">
-        
+
     <button type="button" class="btn btn-primary rateIcon" data-toggle="modal" data-target="#exampleModal">Rate</i></button>
-<!--rating--> 
+<!--rating-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog dashForm" role="document">
             <div class="modal-content">
@@ -142,7 +142,7 @@
                </div>
                <div class="modal-body uploadModal">
                   <div class="modal-body" id="drop_zone">
-                     <i class="fas fa-cloud-upload-alt" id="formFileIcon"></i>                
+                     <i class="fas fa-cloud-upload-alt" id="formFileIcon"></i>
                      <form method="post" role="form" enctype="multipart/form-data">
                         <input type="file" name="file" id="file"/>
                   </div>

@@ -135,49 +135,14 @@ session_start();
             <a href="#" class="card-link">→</a>
           </div>
         </div>
-        
         <div class="card">
-          <img class="card-img-top" src="img/python.png" alt="Card image cap">
-          <div class="card-body">
-            <h3 class="card-title">Python</h3>
-            <a href="#" class="card-link">→</a>
-           </div>
-         </div>
-      </div>
-      
-      <div class="col-2"></div>
-   </div>
-
-   <div class="row">
-      <div class="col-2"></div>
-      <div class="card-deck col-8">
-        <div class="card">
-          <img class="card-img-top" src="img/mysql.png" alt="Card image cap" >
+          <img class="card-img-top" src="img/mysql.png" alt="Card image cap">
           <div class="card-body">
             <h3 class="card-title">MySQL</h3>
-            <a href="Dashboard/index.php" class="card-link">→</a>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="img/plane.png" alt="Card image cap" >
-          <div class="card-body">
-            <h3 class="card-title">SubjectX</h3>
-            <a href="#" class="card-link">→</a>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="img/plane.png" alt="Card image cap">
-          <div class="card-body">
-            <h3 class="card-title">SubjectY</h3>
             <a href="#" class="card-link">→</a>
            </div>
          </div>
       </div>
-      <div class="col-2"></div>
-   </div>
-</div>
-	
-<br>
    </body>
    
  <script type="text/javascript">
