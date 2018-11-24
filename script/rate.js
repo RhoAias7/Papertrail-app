@@ -22,3 +22,6 @@ function irelRate() {
   document.querySelector("#perRow").style.backgroundColor = "#9f9f9f";
   document.querySelector("#relRow").style.backgroundColor = "#9f9f9f";
 }
+function closeRate() {
+  document.querySelector(".formContainer").style.visibility = "hidden";
+}

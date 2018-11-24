@@ -1,83 +1,58 @@
 body {
   font-size: 15px;
-
-  /*	dashborad style for body*/
-  width: 100%;
   height: 100%;
   margin: 0px;
   border: 0;
-  display: block;
-  /* No floating content on sides */
-}
-.container-fluid {
-  width: 100%;
 }
 .zero {
   height: 500px;
-  background-color: white;
 }
-
 .navbar {
   color: #00b9e4;
-  background-color: #00b9e4 !important;
+  background-color: #dcf8ff;
   border-radius: 0;
   width: 100%;
+  position: fixed;
+  z-index: 1;
 }
-
 .navBtn {
-  background-color: #d3f0f7;
+  background-color: white;
   width: 90px;
   color: #00b9e4;
   font-weight: 500;
   float: right;
 }
-.navbtn:hover {
-  color: white;
-}
-
 .navbar-toggler {
   color: #ffffff;
 }
-.navbar-toggler-icon,
-.navbar-toggler {
-  color: white;
-}
-
 .landing {
-  margin-top: 50px;
+  margin-top: 150px;
   text-align: center;
-  padding: 50px;
 }
-
 .cta {
   color: #00b9e4;
-  font-weight: 900;
+  font-weight: 400;
+  font-size: 50px;
 }
 
-.signIn {
+.signUp {
   font-weight: 500;
   padding: 10px;
   width: 200px;
-  float: right;
   border-width: 2px;
   color: white;
   background-color: #00b9e4;
 }
-.signIn:hover {
+.signUp:hover {
   color: #00b9e4;
   border-color: #00b9e4;
-  background-color: #d3f0f7 !important;
+  background-color: #d3f0f7;
 }
 
 .sign-up {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
-.sign-div {
-  color: #3051a0;
-}
-
 .one {
   background-color: #dcf8ff;
   height: 350px;
@@ -194,35 +169,65 @@ i {
 canvas.linkable {
   cursor: pointer;
 }
-/* DASH BOARD STYLING
+
+.scrollUp {
+  background-color: #00b9e4;
+  border-radius: 25px;
+  color: white;
+  display: none;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-weight: 600;
+}
+
+/* 
+====================
+====================
+styling for Dashboard
+====================
+====================
+*/
 
 .dashboard-body {
+  background-image: url("../img/dbBack.jpg");
+}
+.parallax-viewport {
+  height: 1600px;
+  width: 2560px;
   position: relative;
   overflow: hidden;
-  width: 2000px;
-  height: 1500px;
 }
 .parallax-layer {
   position: absolute;
-  background-image: url("../img/dbBack.jpg");
-} */
+}
 
-/* Control Panel */
+/* 
+====================
+====================
+styling for panel
+====================
+====================
+*/
 .controlPanel {
-  opacity: 0.6;
-  float: right;
+  position: fixed;
+  right: 0;
+  bottom: 0;
   width: 10%;
-  background-color: rgb(199, 199, 199);
+  background-color: #00bae400;
   height: 250px;
-  border-radius: 0 0 0 5px;
+  border: 3px solid white;
+  border-radius: 5px 0 0 0;
 }
 .panel {
   width: 100%;
+  padding-right: 10px;
 }
-/* h4 {
-  color: white;
-  font-weight: 500;
-} */
 .panelButton {
   width: 50%;
   height: 50%;
@@ -353,24 +358,35 @@ styling for rate form
 */
 
 .form {
-  background-color: #033850;
+  background-color: #045f8979;
   height: auto;
-  width: 350px;
+  width: 280px;
+  margin: auto;
+  visibility: visible;
 }
 #cardh5 {
-  color: #0c9cdf;
+  margin-top: 5px;
+  color: #ffffff;
+}
+.xbtn {
+  float: right;
+  background-color: #f000;
+}
+.fa-times-circle {
+  font-size: 17px;
+  color: #00b9e4;
 }
 #cardh6 {
-  color: #0c9cdf;
+  color: #ffffff;
   margin: auto;
 }
 .rateRow {
   background-color: #9f9f9f;
-  height: 60px;
+  height: 45px;
   margin-top: 5px;
   padding: 5px;
   border: 2px rgb(255, 255, 255);
-  border-style: outset;
+  border-style: inset;
   width: 95%;
 }
 .rateRow {
@@ -380,19 +396,18 @@ styling for rate form
 }
 .rateRow:hover {
   border: 2px white;
-  border-style: inset;
+  border-style: outset;
   cursor: pointer;
 }
 #perRow:hover {
   background-color: #38bd34;
 }
 #relRow:hover {
-  background-color: #009be4;
+  background-color: #00b9e4;
 }
 #irelRow:hover {
   background-color: #f13f53;
 }
-
 .check {
   margin-top: 50%;
   height: 20px;
@@ -404,10 +419,9 @@ styling for rate form
 .textField {
   left: 20px;
 }
-
 .commentSubmit {
   height: 95%;
-  background-color: #009be4;
+  background-color: #00b9e4;
   width: 90%;
   border: 2px solid #045f89;
   border-radius: 0 5px 5px 0;
@@ -423,11 +437,6 @@ styling for rate form
 .textField {
   display: none;
 }
-.formContainer {
-  display: block;
-  float: right;
-  margin-bottom: 0;
-}
 .btn-info {
   width: 90%;
   padding-left: 10px;
@@ -436,4 +445,8 @@ styling for rate form
 .fa-save {
   font-size: 20px;
   color: white;
+}
+.downloadBtn {
+  background-color: #00b9e4;
+  cursor: pointer;
 }

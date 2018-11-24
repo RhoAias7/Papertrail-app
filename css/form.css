@@ -1,93 +1,93 @@
 body {
-	color: #00b9e4;
-	background-color: #e2e2e2;
-	height: auto;
-	margin-top: 30px;
+  color: #00b9e4;
+  background-color: #e2e2e2;
+  height: auto;
+  margin-top: 30px;
 }
 
 form {
-	width: 400px;
-	height: 600px;
-	background-color: #ffffff;
-	padding: 40px;
-	border-radius: 10px;
-	border-width: 5px solid;
-	border-color: #ff0000;
-	margin: auto;
+  width: 400px;
+  height: 600px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  border-width: 5px solid;
+  border-color: #ff0000;
+  margin: auto;
 }
 
 h2 {
-	color: #E46C00;
-	width: 150px;
-	padding-bottom: 3px;
-	margin-bottom: 5px;
-	border: 4px;
-	border-bottom-style: solid;
+  color: #e46c00;
+  width: 150px;
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+  border: 4px;
+  border-bottom-style: solid;
 }
 
 p {
-
-	color: #E46C00;
-	font-size: 15px;
-	margin-bottom: 20px;
+  color: #e46c00;
+  font-size: 15px;
+  margin-bottom: 20px;
 }
 
 span {
-	color: black;
-	font-size: 15px;
+  color: black;
+  font-size: 15px;
 }
 
 input {
-	border: 1px solid #E46C00;
+  border: 1px solid #e46c00;
 }
 
-input[type=text] {
-	color: #E46C00;
+input[type="text"] {
+  color: #e46c00;
 }
 
-input[type=password] {
-	color: #E46C00;
+input[type="password"] {
+  color: #e46c00;
 }
 
 .btn-block {
-	background-color: #00b9e4;
-	color: white;
-	border-color: white;
-	border-width: 2px;
-	margin-top: 15px
+  background-color: #00b9e4;
+  color: white;
+  border-color: white;
+  border-width: 2px;
+  margin-top: 15px;
 }
 
 .btn-block:hover {
-	background-color: #ffffff;
-	color: #E46C00;
-	border-color: #E46C00;
-	border-width: 2px;
+  background-color: #ffffff;
+  color: #e46c00;
+  border-color: #e46c00;
+  border-width: 2px;
 }
 
 a {
-	color: #04647b;
-	font-size: 15px;
+  color: #04647b;
+  font-size: 15px;
 }
 
 a:hover {
-	color: #E46C00
+  color: #e46c00;
 }
 
 #pforget {
-	font-size: 12px;
-	float: right;
+  font-size: 12px;
+  float: right;
 }
 
 #pforget:hover {
-	color: #E46C00;
+  color: #e46c00;
 }
 
 img {
-	height: 130px;
-	margin: auto;
-	margin-bottom: 20px;
+  height: 130px;
+  margin-bottom: 20px;
 }
-
+#planeLink {
+  margin: auto;
+}
 .signInDrop {
-	margin-top: 30px
+  margin-top: 30px;
 }

@@ -19,13 +19,14 @@ session_start();
            <script src="stuff/js/lib/arbor-tween.js"></script>
            <script src="stuff/js/lib/graphics.js"></script>
            <script src="stuff/js/lib/renderer.js"></script>
+           <script src="script/main.js"></script>
            <link rel="stylesheet" href="css/indexStyle.css"/>
    </head>
    
    <body>
 
 <!--NAVIGATION-->
-      <nav class="navbar navbar-expand-md navbar bg-primary">
+      <nav class="navbar navbar-expand-md">
          <a class="navbar-brand" href="landing.php">
             <img src="img/plane.png" height="30px">
          </a> 
@@ -59,12 +60,14 @@ session_start();
                 <div class="col-md-1"></div>
                 <div class="col-md-10 col-sm-12 col-12 landing">
                    <h1 class="cta">Join your peers today to share and explore our vast libraries of your study material.</h1><br>
-           		    <a href="signUpPage.php" class="btn signIn">Sign Up Today</a>
+           		    <a href="signUpPage.php" class="btn signUp">Sign Up Today</a>
                 </div>
                 <div class="col-md-1"></div>
              </div>
           </div>
         
+<!-- SCROLL TO TOP -->
+         <a href="#" class="scrollUp"> ^ </a>
         <!--DESCRIPTION-->
          <div class="container-fluid one">
             <div class="row">
@@ -87,12 +90,11 @@ session_start();
 
             </div>
          </div>
-        <!--TUTORIAL TEXT-->
+         
+<!--TUTORIAL TEXT-->
          <div class="container-fluid two">
             <div class="row">
-
                <div class="col-md-1"></div>
-
                <div class="col-md-5 col-sm-12 col-12 tutSection">
                   <h3 class="tutHeader">How Does It Work?</h3>
                   <div class="tutText">
@@ -100,23 +102,19 @@ session_start();
                      <p>After selecting your subject you will be taken to the <i>Subject Canvas.</i> Here you will find the core of PaperTrail, a network of study notes and all of your peers interactions.
                      <li>Uploaded material is represtented as circle <i>Nodes,</i></li>
                      <li>Users that have interacted with a file are respresented by a <i style="color:#ffcc00">Block,</i></li>
-                     <li>Comments can be viewed when you hover over an <i style="color:#38bd34">Edge</i> denoted as a link.</li>
-                     </p>
+                     <li>Comments can be viewed when you hover over an <i style="color:#38bd34">Edge</i> denoted as a link.</li></p>
                      <p>PaperTrail uses visualization to make it easier for you to decide what notes you want to downloand and use<br>There are 3 ratings you can give an uploaded material:
                      <ol class="tutRate" style="color:#38bd34"><b >Perfect:</b> represented by a Green Edge,</ol>
                      <ol class="tutRate" style="color:#00b9e4"><b >Relevant:</b> represented by a Blue Edge,</ol>
-                     <ol class="tutRate" style="color:#f12c2c"><b >Irrelevant:</b> represented by a Red Edge.</ol>
-                     </p>
+                     <ol class="tutRate" style="color:#f12c2c"><b >Irrelevant:</b> represented by a Red Edge.</ol></p>
                   </div> 
                </div>
 <!--TUTORIAL GRAPH-->
                <div class="col-md-6 col-sm-12 col-12 graph">
-                  <div><canvas id="sitemap" width="400" height="400"></canvas></div>
+                  <div><canvas id="sitemap" height="400" width="400"></canvas></div>
                </div>
-
             </div>
          </div>
-
 <!--SUBJECT SELECITON-->
 <div class="container-fluid three">
    <div class="row subHeader"><h3 class="selectSub">Choose your subject <?php if (isset($_SESSION['userUid'])) { echo $_SESSION['userUid']; }?></h3></div> 
@@ -152,7 +150,7 @@ session_start();
    </body>
    
  <script type="text/javascript">
-              var sys = arbor.ParticleSystem(1000, 200, .5);
+              var sys = arbor.ParticleSystem(1000, 500, .5);
               sys.parameters({
                      gravity: false
               });
