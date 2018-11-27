@@ -193,18 +193,19 @@ styling for Dashboard
 ====================
 ====================
 */
-
-.dashboard-body {
-  background-image: url("../img/dbBack.jpg");
+.dashNav {
+  width: 100%;
 }
 .parallax-viewport {
-  height: 1600px;
-  width: 2560px;
+  height: 800;
+  width: 500;
   position: relative;
   overflow: hidden;
+  background-image: url("../img/dbBack.jpg");
 }
 .parallax-layer {
   position: absolute;
+  background-repeat: no-repeat;
 }
 
 /* 
@@ -246,21 +247,26 @@ styling for panel
   padding: 10px;
 }
 
-.rateIcon {
-  color: white;
-}
+/* 
+====================
+====================
+styling for upload
+====================
+====================
+*/
 
 .uploadModal {
   background-color: #d3f0f7;
   padding-top: 50px;
 }
 #formFileIcon {
-  font-size: 100px;
+  font-size: 60px;
   color: #009be4;
 }
 
 .uploadForm {
-  width: 40%;
+  width: 30%;
+  border-radius: 5px;
 }
 #drop_zone {
   border: #009be4 3px dashed;
@@ -302,53 +308,9 @@ styling for panel
   color: #009be4;
   background-color: white;
 }
-
 .modal-header {
   background-color: #00b9e4;
 }
-.fileTitle {
-  color: white;
-}
-.close {
-  color: white;
-}
-.formFileIcon {
-  margin-top: 40px;
-  color: #909090;
-  font-size: 100px;
-}
-.btnDelete {
-  color: red;
-}
-.btnDown {
-  color: limegreen;
-}
-.btnRate {
-  border: 1px #f4f4f4 solid;
-  color: white;
-}
-#per {
-  color: #38bd34;
-  width: auto;
-}
-#rel {
-  color: #00b9e4;
-  width: auto;
-}
-#irel {
-  color: #f12c53;
-  width: auto;
-}
-.rateLi {
-  list-style: none;
-  display: inline;
-  font-size: 20px;
-  padding: 5px;
-}
-#userComment {
-  visibility: visible;
-}
-
 /* 
 ====================
 ====================
@@ -412,9 +374,6 @@ styling for rate form
   margin-top: 50%;
   height: 20px;
   width: 20px;
-}
-.textSide {
-  margin-top: 3%;
 }
 .textField {
   left: 20px;

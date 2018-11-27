@@ -18,7 +18,7 @@ session_start();
            <script src="stuff/js/lib/arbor.js"></script>
            <script src="stuff/js/lib/arbor-tween.js"></script>
            <script src="stuff/js/lib/graphics.js"></script>
-           <script src="stuff/js/lib/renderer.js"></script>
+           <script src="script/landingTutGraph.js"></script>
            <script src="script/main.js"></script>
            <link rel="stylesheet" href="css/indexStyle.css"/>
    </head>

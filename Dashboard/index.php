@@ -13,7 +13,7 @@
     <script src="../stuff/js/lib/arbor.js"></script>
     <script src="../stuff/js/lib/graphics.js"></script>
     <script src="../stuff/js/lib/renderer.js"></script>
-    <!-- <script src="script/jqueryparallax.js"></script> -->
+    <script src="../script/jqueryparallax.js"></script>
     <script src="../script/rate.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/indexStyle.css">
@@ -50,7 +50,6 @@
                   <i class="fas fa-cloud-upload-alt panelIcon"></i>
                </button>
         </div>
-        
         <div class="panel-bottom panel row">
             <button type="button" class="panelButton">
                 <i class="fas fa-comments panelIcon"></i>
@@ -149,17 +148,15 @@
         var sys = arbor.ParticleSystem(5, 10, 0.1341, true, 55);
         sys.parameters({gravity: true});
         sys.renderer = Renderer("#dashCanvas");
-        <?php
-        include "show.php";
-        ?>
+        <?php include "show.php";?>
     </script>
-    <script type="text/javascript" src="../script/jqueryparallax.js">
-    $(document).ready(function(){
-        // Declare parallax on layers
-        $('.parallax-layer').parallax({
-            mouseport: $("#port")
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // Declare parallax on layers
+            $('.parallax-layer').parallax({
+                mouseport: $("body")
+            });
         });
-    });
 </script>
 </body>
 </html>
