@@ -22,7 +22,7 @@
 
 <body class="dashboard-body parallax-viewport">
     <nav class="navbar navbar-expand-md dashNav">
-        <a class="navbar-brand" href="../landing.php">
+        <a class="navbar-brand" href="../index.php">
             <img src="../img/plane.png" width="30px" height="30px" alt="">
         </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
             <span class="navbar-toggler-icon"></span>

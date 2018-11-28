@@ -19,7 +19,7 @@ $(document).ready(function() {
   });
 });
 
-//if upload form tick is not checked, alert user to agree.
+//If upload form tick is not checked, alert user to agree.
 function uploadCheck() {
   if ((document.getElementById("uploadCheck").checked = false)) {
     alert(
