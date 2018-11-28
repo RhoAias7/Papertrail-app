@@ -18,3 +18,12 @@ $(document).ready(function() {
     $(".signUp").effect("shake", { times: 10 }, 1000);
   });
 });
+
+//if upload form tick is not checked, alert user to agree.
+function uploadCheck() {
+  if ((document.getElementById("uploadCheck").checked = false)) {
+    alert(
+      "Please check the box to allow us to share your notes with your peers."
+    );
+  }
+}

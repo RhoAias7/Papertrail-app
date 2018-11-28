@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Welcome to the Papertrail Dashboard</title>
+    <title>Welcome | Papertrail Dashboard</title>
 
     <link rel="shortcut icon" type="image/png" class="img-fluid" href="../../img/plane.png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -115,7 +115,7 @@
             </div>
         </div>
 <!-- UPLOAD -->
-        <div class="modal fade" id="bottomLeft1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade uploadBlock" id="bottomLeft1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog uploadForm" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -133,8 +133,8 @@
                         </div>
                         <input type="text" name="filename" class="form-control" id="fileNameUpload" placeholder="Filename..">
                         <input type="text" name="shortDesc" class="form-control" id="fileCommentUpload" placeholder="Please enter a short description.">
-                        <input type="checkbox" name="vehicle" value="Agree">Allow us to share your Notes.<br>
-                        <button id="send" type="upload" name="upload" class="btn uploadBtn">Upload</button>
+                        <input type="checkbox" name="agree" value="Agree" id="uploadCheck" >Allow us to share your Notes.<br>
+                        <button id="send" type="upload" name="upload" class="btn uploadBtn" onclick="uploadCheck()">Upload</button>
                         </form>
                         <p id="fileName"></p>
                     </div>
