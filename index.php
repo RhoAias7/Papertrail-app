@@ -161,7 +161,7 @@ session_start();
                echo'
                   <div class="container-fluid four">
                   <div class="noticeImg"> <img class="img-fluid signInNoticeImg" src="img/plane.png"> </div>
-                     <div class="row noticeTxt"> <h3 class="signInNotice"> Create a free PaperTrail Account <br>to view our range of subjects and materials</h3> 
+                     <div class="row noticeTxt"> <h3 class="signInNotice"> Sign in or create a free PaperTrail account <br>to view our range of subjects and materials</h3> 
                      
                      </div>
                   </div>
