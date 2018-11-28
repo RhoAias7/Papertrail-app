@@ -185,7 +185,23 @@ canvas.linkable {
   bottom: 30px;
   font-weight: 600;
 }
-
+.four {
+  margin-top: 150px;
+  height: 250px;
+  background-color: #dcf8ff;
+  text-align: center;
+}
+.signInNoticeImg {
+  height: 140px;
+  margin-top: -50px;
+}
+.signInNotice {
+  color: #70d7ff;
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin: auto;
+}
 /* 
 ====================
 ====================

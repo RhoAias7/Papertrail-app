@@ -116,37 +116,61 @@ session_start();
             </div>
          </div>
 <!--SUBJECT SELECITON-->
-<div class="container-fluid three">
-   <div class="row subHeader"><h3 class="selectSub">Choose your subject <?php if (isset($_SESSION['userUid'])) { echo $_SESSION['userUid']; }?></h3></div> 
-   <div class="row">
-      
-      <div class="col-md-2"></div>
-      
-      <div class="card-deck col-md-8">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="img/java.png" alt="Card image cap" >
-          <div class="card-body">
-            <h3 class="card-title">Java</h3>
-            <a href="Dashboard/index.php" class="card-link">→</a>
-          </div>
-        </div>
-        
-        <div class="card">
-          <img class="card-img-top img-fluid" src="img/csharp.png" alt="Card image cap" >
-          <div class="card-body">
-            <h3 class="card-title">C#</h3>
-            <a href="Dashboard/index.php" class="card-link">→</a>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top img-fluid" src="img/mysql.png" alt="Card image cap">
-          <div class="card-body">
-            <h3 class="card-title">MySQL</h3>
-            <a href="Dashboard/index.php" class="card-link">→</a>
-           </div>
-         </div>
-      </div>
-      
+
+
+         
+         <?php 
+            if (isset($_SESSION['userUid'])) {
+                
+                echo'
+                <div class="container-fluid three">
+                  <div class="row subHeader"></div> 
+                  <div class="row">
+                     <div class="col-md-2"></div>
+                     
+                     <div class="card-deck col-md-8">
+                        <div class="card">
+                           <img class="card-img-top img-fluid" src="img/java.png" alt="Card image cap" >
+                           <div class="card-body">
+                              <h3 class="card-title">Java</h3>
+                              <a href="Dashboard/index.php" class="card-link">→</a>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top img-fluid" src="img/csharp.png" alt="Card image cap" >
+                           <div class="card-body">
+                              <h3 class="card-title">C#</h3>
+                              <a href="Dashboard/index.php" class="card-link">→</a>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top img-fluid" src="img/mysql.png" alt="Card image cap">
+                           <div class="card-body">
+                           <h3 class="card-title">MySQL</h3>
+                           <a href="Dashboard/index.php" class="card-link">→</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-2"></div>
+                  </div>
+                </div>';
+            }
+            
+            else {
+               echo'
+                  <div class="container-fluid four">
+                  <div class="noticeImg"> <img class="img-fluid signInNoticeImg" src="img/plane.png"> </div>
+                     <div class="row noticeTxt"> <h3 class="signInNotice"> Create a free PaperTrail Account <br>to view our range of subjects and materials</h3> 
+                     
+                     </div>
+                  </div>
+               ';
+            }
+         ?>
+         
+         
+               
    </body>
    
  <script type="text/javascript">
