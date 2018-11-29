@@ -1,6 +1,7 @@
 //fade CTA
 $(document).ready(function() {
   $(".cta")
+    .hide(0)
     .delay(500)
     .fadeIn(2000);
 });
