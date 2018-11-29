@@ -1,3 +1,35 @@
+//fade CTA
+$(document).ready(function() {
+  $(".cta")
+    .delay(500)
+    .fadeIn(2000);
+});
+$(document).ready(function() {
+  $(".signUp")
+    .hide(0)
+    .delay(1500)
+    .fadeIn(500);
+});
+
+// //shake CTA
+// $(document).ready(function() {
+//   $(window).ready(function() {
+//     $(".signUp").effect("shake", { times: 10 }, 1000);
+//   });
+// });
+
+//img rotation
+$(document).ready(function() {
+  var rotation = function() {
+    $(".signInNoticeImg").rotate({
+      angle: 0,
+      animateTo: -360,
+      callback: rotation
+    });
+  };
+  rotation();
+});
+
 //scroll to top funciton
 $(document).ready(function() {
   $(window).scroll(function() {
@@ -9,13 +41,6 @@ $(document).ready(function() {
   });
   $("#scrollUp").on("click", function() {
     $("html", "body").animate({ scrollTop: 0 }, 1000);
-  });
-});
-
-//shake CTA
-$(document).ready(function() {
-  $(window).scroll(function() {
-    $(".signUp").effect("shake", { times: 10 }, 1000);
   });
 });
 
