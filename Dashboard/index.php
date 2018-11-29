@@ -15,6 +15,8 @@
     <script src="../stuff/js/lib/renderer.js"></script>
     <script src="../script/jqueryparallax.js"></script>
     <script src="../script/rate.js"></script>
+    
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/indexStyle.css">
     <meta charset="UTF-8"> 
