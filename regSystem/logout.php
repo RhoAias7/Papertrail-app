@@ -5,6 +5,6 @@ if (isset($_POST['logout-submit'])) {
     session_start();
     session_unset();
     session_destroy();
-    header("Location: ../landing.php");
+    header("Location: ../index.php");
     
 }

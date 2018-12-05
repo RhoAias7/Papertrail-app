@@ -22,7 +22,7 @@
             </div>
          </div>
          <div class="row">
-            <a href="landing.php"id="planeLink"><img src="img/plane.png" id="planeForm"></a>
+            <a href="index.php"id="planeLink"><img src="img/plane.png" id="planeForm"></a>
          </div>
          <div class="signInDrop">
             <div class="form-group row">

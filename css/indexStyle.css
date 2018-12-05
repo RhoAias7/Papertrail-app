@@ -318,37 +318,25 @@ styling for rate form
 ====================
 ====================
 */
-
 .form {
-  background-color: #045f8979;
+  background-color: #033850;
   height: auto;
-  width: 280px;
-  margin: auto;
-  visibility: visible;
+  width: 350px;
 }
 #cardh5 {
-  margin-top: 5px;
-  color: #ffffff;
-}
-.xbtn {
-  float: right;
-  background-color: #f000;
-}
-.fa-times-circle {
-  font-size: 17px;
-  color: #00b9e4;
+  color: #0c9cdf;
 }
 #cardh6 {
-  color: #ffffff;
+  color: #0c9cdf;
   margin: auto;
 }
 .rateRow {
   background-color: #9f9f9f;
-  height: 45px;
+  height: 60px;
   margin-top: 5px;
   padding: 5px;
   border: 2px rgb(255, 255, 255);
-  border-style: inset;
+  border-style: outset;
   width: 95%;
 }
 .rateRow {
@@ -358,29 +346,34 @@ styling for rate form
 }
 .rateRow:hover {
   border: 2px white;
-  border-style: outset;
+  border-style: inset;
   cursor: pointer;
 }
 #perRow:hover {
   background-color: #38bd34;
 }
 #relRow:hover {
-  background-color: #00b9e4;
+  background-color: #009be4;
 }
 #irelRow:hover {
   background-color: #f13f53;
 }
+
 .check {
   margin-top: 50%;
   height: 20px;
   width: 20px;
 }
+.textSide {
+  margin-top: 3%;
+}
 .textField {
   left: 20px;
 }
+
 .commentSubmit {
   height: 95%;
-  background-color: #00b9e4;
+  background-color: #009be4;
   width: 90%;
   border: 2px solid #045f89;
   border-radius: 0 5px 5px 0;
@@ -396,6 +389,14 @@ styling for rate form
 .textField {
   display: none;
 }
+.formContainer {
+  top: 80px;
+  left: 340px;
+  display: block;
+  float: right;
+  position: absolute;
+  margin-bottom: 0;
+}
 .btn-info {
   width: 90%;
   padding-left: 10px;
@@ -405,7 +406,44 @@ styling for rate form
   font-size: 20px;
   color: white;
 }
-.downloadBtn {
-  background-color: #00b9e4;
-  cursor: pointer;
+
+/* #chat-container{
+  width: 40%;
+  background: white;
+  margin: 0 auto;
+  padding: 20px;
 }
+
+#chat-box{
+  margin: 2px;
+  width: 100%;
+  overflow: auto;
+  height: 300px;
+}
+
+#inputText{
+ width: 100%;
+ height: 40px; 
+ border: 1px solid grey;
+ border-radius: 5px;
+}
+
+#txtArea{
+  width: 91%;
+  height: 100%;
+}
+
+#push-container{
+  height: 5%;
+  width: 100%;
+}
+
+#chat_data{
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid silver;
+  font-weight: bold;
+  height: 50px;
+  font-size: 10px;
+}      */
