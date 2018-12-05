@@ -1,0 +1,442 @@
+body {
+  font-size: 15px;
+
+  /*	dashborad style for body*/
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  display: block;
+  /* No floating content on sides */
+}
+.container-fluid {
+  width: 100%;
+}
+.zero {
+  height: 500px;
+  background-color: white;
+}
+
+.navbar {
+  color: #00b9e4;
+  background-color: #00b9e4 !important;
+  border-radius: 0;
+  width: 100%;
+}
+
+.navBtn {
+  background-color: #d3f0f7;
+  width: 90px;
+  color: #00b9e4;
+  font-weight: 500;
+  float: right;
+}
+.navbtn:hover {
+  color: white;
+}
+
+.navbar-toggler {
+  color: #ffffff;
+}
+.navbar-toggler-icon,
+.navbar-toggler {
+  color: white;
+}
+
+.landing {
+  margin-top: 50px;
+  text-align: center;
+  padding: 50px;
+}
+
+.cta {
+  color: #00b9e4;
+  font-weight: 900;
+}
+
+.signIn {
+  font-weight: 500;
+  padding: 10px;
+  width: 200px;
+  float: right;
+  border-width: 2px;
+  color: white;
+  background-color: #00b9e4;
+}
+.signIn:hover {
+  color: #00b9e4;
+  border-color: #00b9e4;
+  background-color: #d3f0f7 !important;
+}
+
+.sign-up {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.sign-div {
+  color: #3051a0;
+}
+
+.one {
+  background-color: #dcf8ff;
+  height: 350px;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+.what {
+  text-align: left;
+  width: 250px;
+  color: #00b9e4;
+  padding-bottom: 1px;
+  margin-bottom: 25px;
+  border: 4px;
+  border-bottom-style: solid;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+h4 {
+  color: #333;
+  padding-bottom: 15px;
+  font-weight: 400;
+}
+
+.info-image {
+  margin-top: 20px;
+}
+
+.two {
+  background-color: white;
+}
+
+.tutSection {
+  margin-top: 20px;
+}
+
+.tutHeader {
+  text-align: left;
+  width: 250px;
+  color: #00b9e4;
+  border-color: white;
+  padding-bottom: 2px;
+  margin-bottom: 30px;
+  border: 4px;
+  border-bottom-style: solid;
+}
+
+i {
+  color: #00b9e4;
+}
+
+.three {
+  background-color: #dcf8ff;
+  height: 1000px;
+}
+
+.subHeader {
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.selectSub {
+  text-align: center;
+  width: 250px;
+  color: #00b9e4;
+  padding-bottom: 2px;
+  margin-bottom: 30px;
+  border: 4px;
+  border-bottom-style: solid;
+}
+
+.card-deck {
+  margin-top: 30px;
+}
+
+.card {
+  text-align: center;
+  border-color: #e3e3e3;
+  border-radius: 0 0 5px 5px;
+  background-color: white;
+  height: 300px;
+}
+
+.card-body {
+  color: white;
+  background-color: white;
+  height: 100px;
+}
+
+.card-title {
+  text-align: center;
+  color: #00b9e4;
+}
+
+.card-link {
+  float: right;
+  font-size: 30px;
+  color: #00b9e4;
+}
+
+.card-img-top {
+  height: 190px;
+  width: 190px;
+  padding: 10px;
+  margin: auto;
+}
+
+canvas.linkable {
+  cursor: pointer;
+}
+/* DASH BOARD STYLING
+
+.dashboard-body {
+  position: relative;
+  overflow: hidden;
+  width: 2000px;
+  height: 1500px;
+}
+.parallax-layer {
+  position: absolute;
+  background-image: url("../img/dbBack.jpg");
+} */
+
+/* Control Panel */
+.controlPanel {
+  opacity: 0.6;
+  float: right;
+  width: 10%;
+  background-color: rgb(199, 199, 199);
+  height: 250px;
+  border-radius: 0 0 0 5px;
+}
+.panel {
+  width: 100%;
+}
+/* h4 {
+  color: white;
+  font-weight: 500;
+} */
+.panelButton {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  border-style: none;
+  border-radius: 10px;
+  background-color: #009ce400;
+}
+.panelButton:hover {
+  cursor: pointer;
+}
+
+.panelIcon {
+  color: white;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.rateIcon {
+  color: white;
+}
+
+.uploadModal {
+  background-color: #d3f0f7;
+  padding-top: 50px;
+}
+#formFileIcon {
+  font-size: 100px;
+  color: #009be4;
+}
+
+.uploadForm {
+  width: 40%;
+}
+#drop_zone {
+  border: #009be4 3px dashed;
+  border-radius: 5px;
+  background-color: white;
+  width: 75%;
+  height: 60%;
+  margin: auto;
+  padding: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+#file {
+  color: #4e4e4e;
+  text-align: left;
+}
+.form-control {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+#fileNameUpload {
+  width: 40%;
+}
+#fileCommentUpload {
+  width: 80%;
+}
+#fileDrop {
+  width: 40%;
+}
+#send {
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  color: white;
+  background-color: #009be4;
+}
+#send:hover {
+  border: 1px solid #009be4;
+  color: #009be4;
+  background-color: white;
+}
+
+.modal-header {
+  background-color: #00b9e4;
+}
+.fileTitle {
+  color: white;
+}
+.close {
+  color: white;
+}
+.formFileIcon {
+  margin-top: 40px;
+  color: #909090;
+  font-size: 100px;
+}
+.btnDelete {
+  color: red;
+}
+.btnDown {
+  color: limegreen;
+}
+.btnRate {
+  border: 1px #f4f4f4 solid;
+  color: white;
+}
+#per {
+  color: #38bd34;
+  width: auto;
+}
+#rel {
+  color: #00b9e4;
+  width: auto;
+}
+#irel {
+  color: #f12c53;
+  width: auto;
+}
+.rateLi {
+  list-style: none;
+  display: inline;
+  font-size: 20px;
+  padding: 5px;
+}
+#userComment {
+  visibility: visible;
+}
+
+/* 
+====================
+====================
+styling for rate form 
+====================
+====================
+*/
+
+.form {
+  background-color: #033850;
+  height: auto;
+  width: 350px;
+}
+#cardh5 {
+  color: #0c9cdf;
+}
+#cardh6 {
+  color: #0c9cdf;
+  margin: auto;
+}
+.rateRow {
+  background-color: #9f9f9f;
+  height: 60px;
+  margin-top: 5px;
+  padding: 5px;
+  border: 2px rgb(255, 255, 255);
+  border-style: outset;
+  width: 95%;
+}
+.rateRow {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.rateRow:hover {
+  border: 2px white;
+  border-style: inset;
+  cursor: pointer;
+}
+#perRow:hover {
+  background-color: #38bd34;
+}
+#relRow:hover {
+  background-color: #009be4;
+}
+#irelRow:hover {
+  background-color: #f13f53;
+}
+
+.check {
+  margin-top: 50%;
+  height: 20px;
+  width: 20px;
+}
+.textSide {
+  margin-top: 3%;
+}
+.textField {
+  left: 20px;
+}
+
+.commentSubmit {
+  height: 95%;
+  background-color: #009be4;
+  width: 90%;
+  border: 2px solid #045f89;
+  border-radius: 0 5px 5px 0;
+}
+.fa-paper-plane {
+  color: white;
+  font-size: 24px;
+  margin-left: -10px;
+}
+.showHideBottom {
+  visibility: hidden;
+}
+.textField {
+  display: none;
+}
+.formContainer {
+  top: 30px;
+  left: 340px;
+  display: block;
+  float: right;
+  position: absolute;
+  margin-bottom: 0;
+}
+.btn-info {
+  width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.fa-save {
+  font-size: 20px;
+  color: white;
+}
