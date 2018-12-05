@@ -22,3 +22,16 @@ function irelRate() {
   document.querySelector("#perRow").style.backgroundColor = "#9f9f9f";
   document.querySelector("#relRow").style.backgroundColor = "#9f9f9f";
 }
+function closeRate() {
+  document.querySelector(".formContainer").style.visibility = "hidden";
+}
+
+//If upload form is not checked, alert user to agree.
+function uploadCheck() {
+  console.log("test text");
+  if (document.getElementById("uploadChecked").checked) {
+    alert("checked");
+  } else {
+    alert("You didn't check it! Let me check it for you.");
+  }
+}

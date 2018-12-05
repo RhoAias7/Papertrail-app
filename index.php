@@ -1,5 +1,4 @@
 <?php 
- 
 session_start();
 ?>
 <!DOCTYPE html>
@@ -14,6 +13,7 @@ session_start();
            <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+           <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js">
            <script src="stuff/js/jquery-1.6.1.min.js"></script>
            <script src="stuff/js/jquery.address-1.4.min.js"></script>
            <script src="stuff/js/lib/arbor.js"></script>
@@ -60,7 +60,7 @@ session_start();
              <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10 col-sm-12 col-12 landing">
-                   <h1 class="cta">Join your peers today to share and explore our vast libraries of your study material.</h1><br>
+                 <h1 class="cta">Join your peers today<br> to share and explore<br> our vast libraries of <br>your study material</h1><br>
            		    <a href="signUpPage.php" class="btn signUp">Sign Up Today</a>
                 </div>
                 <div class="col-md-1"></div>
@@ -117,37 +117,61 @@ session_start();
             </div>
          </div>
 <!--SUBJECT SELECITON-->
-<div class="container-fluid three">
-   <div class="row subHeader"><h3 class="selectSub">Choose your subject <?php if (isset($_SESSION['userUid'])) { echo $_SESSION['userUid']; }?></h3></div> 
-   <div class="row">
-      
-      <div class="col-md-2"></div>
-      
-      <div class="card-deck col-md-8">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="img/java.png" alt="Card image cap" >
-          <div class="card-body">
-            <h3 class="card-title">Java</h3>
-            <a href="Dashboard/index.php" class="card-link">→</a>
-          </div>
-        </div>
-        
-        <div class="card">
-          <img class="card-img-top img-fluid" src="img/csharp.png" alt="Card image cap" >
-          <div class="card-body">
-            <h3 class="card-title">C#</h3>
-            <a href="Dashboard/index.php" class="card-link">→</a>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top img-fluid" src="img/mysql.png" alt="Card image cap">
-          <div class="card-body">
-            <h3 class="card-title">MySQL</h3>
-            <a href="Dashboard/index.php" class="card-link">→</a>
-           </div>
-         </div>
-      </div>
-      
+
+
+         
+         <?php 
+            if (isset($_SESSION['userUid'])) {
+                
+                echo'
+                <div class="container-fluid three">
+                  <div class="row subHeader"></div> 
+                  <div class="row">
+                     <div class="col-md-2"></div>
+                     
+                     <div class="card-deck col-md-8">
+                        <div class="card">
+                           <img class="card-img-top img-fluid" src="img/java.png" alt="Card image cap" >
+                           <div class="card-body">
+                              <h3 class="card-title">Java</h3>
+                              <a href="Dashboard/index.php" class="card-link">→</a>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top img-fluid" src="img/csharp.png" alt="Card image cap" >
+                           <div class="card-body">
+                              <h3 class="card-title">C#</h3>
+                              <a href="Dashboard/index.php" class="card-link">→</a>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top img-fluid" src="img/mysql.png" alt="Card image cap">
+                           <div class="card-body">
+                           <h3 class="card-title">MySQL</h3>
+                           <a href="Dashboard/index.php" class="card-link">→</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-2"></div>
+                  </div>
+                </div>';
+            }
+            
+            else {
+               echo'
+                  <div class="container-fluid four">
+                  <div class="noticeImg"> <img class="img-fluid signInNoticeImg" src="img/plane.png"> </div>
+                     <div class="row noticeTxt"> <h3 class="signInNotice"> Sign in or create a free PaperTrail account <br>to view our range of subjects and materials</h3> 
+                     
+                     </div>
+                  </div>
+               ';
+            }
+         ?>
+         
+         
+               
    </body>
    
  <script type="text/javascript">
@@ -187,7 +211,6 @@ session_start();
                               node3: {"color": "#00b9e4",},
                               node2: {"color": "#f12c2c",}
                           }
-                         
                       }
               };
               sys.graft(data);
