@@ -1,8 +1,23 @@
 body {
-  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
   height: 100%;
   margin: 0px;
   border: 0;
+}
+h1 {
+  font-size: 50px;
+}
+p,
+li,
+ol {
+  font-size: 17px;
+}
+
+p::selection,
+li::selection,
+ol::selection {
+  background: #dcf8ff; /* WebKit/Blink Browsers */
+  color: white;
 }
 .zero {
   height: 500px;
@@ -33,7 +48,6 @@ body {
 .cta {
   color: #00b9e4;
   font-weight: 400;
-  font-size: 50px;
 }
 
 .signUp {
@@ -157,6 +171,7 @@ i {
 .card-link {
   float: right;
   font-size: 30px;
+
   color: #00b9e4;
 }
 
@@ -212,17 +227,15 @@ styling for Dashboard
 */
 .dashNav {
   width: 100%;
+  position: fixed;
+  z-index: 1;
 }
-.parallax-viewport {
-  height: 800;
-  width: 500;
-  position: relative;
-  overflow: hidden;
-  background-image: url("../img/dbBack.jpg");
+.dashboard-body {
+  height: auto;
+  height: 700px;
+  background-image: url("../img/spaceTwo.jpg");
 }
-.parallax-layer {
-  position: absolute;
-  background-repeat: no-repeat;
+#bottomCenter {
 }
 
 /* 

@@ -23,15 +23,15 @@
     <script src="../scripts/js/lib/arbor.js"></script>
     <script src="../scripts/js/lib/graphics.js"></script>
     <script src="../scripts/js/lib/renderer.js"></script>
-    <!-- <script src="../scripts/jqueryparallax.js"></script> -->
     <script src="../scripts/rate.js"></script>
     <script src="ajax.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/indexStyle.css">
     <meta charset="UTF-8"> 
 </head>
 
-<body class="dashboard-body parallax-viewport">
+<body>
     <nav class="navbar navbar-expand-md dashNav">
         <a class="navbar-brand" href="../index.php">
             <img src="../img/plane.png" width="30px" height="30px" alt="">
@@ -39,8 +39,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
-
-<div class="parallax-layer">
+<div class="dashboard-body"> 
 <!--  Control panel-->
     <div class="controlPanel row">
         <div class="panel-top panel row">
@@ -148,7 +147,7 @@ include "rate.php";
     <!-- Chat-Modal -->
 
     <script onload="loadDoc()">
-//dont touch it works
+        //dont touch it, it works, I dont know how
         $('#uploadCheck').on('click', function(){
             $('#send').show(); 
         });
@@ -157,14 +156,5 @@ include "rate.php";
         sys.renderer = Renderer("#dashCanvas");
         <?php include "show.php";?>
     </script>
-
-    <script type="text/javascript">
-        // $(document).ready(function(){
-        //     // Declare parallax on layers
-        //     $('.parallax-layer').parallax({
-        //         mouseport: $("body")
-        //     });
-        // });
-</script>
 </body>
 </html>
