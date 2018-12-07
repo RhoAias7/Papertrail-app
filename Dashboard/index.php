@@ -156,16 +156,6 @@ include "rate.php";
         <?php include "show.php";?>
     </script>
     -->
-    <script> 
-     console.log("test");
-        $(document).ready(function() {
- 
-  const el = document.querySelector(".dashboard-content");
-  el.addEventListener("mousemove", e => {
-    el.style.backgroundPositionX = -e.offsetX + "px";
-    el.style.backgroundPositionY = -e.offsetY + "px";
-  });
-});
     <script>
 </body>
 </html>
