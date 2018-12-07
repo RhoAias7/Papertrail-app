@@ -6,18 +6,17 @@
            <link rel="shortcut icon" type="image/png" class="img-fluid" href="../../img/plane.png"/>
            <meta name="viewport" content="width=device-width, inital-scale=1" charset="utf-8">
            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>      
+           <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>       -->
            <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
            <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js">
-           <script src="stuff/js/jquery-1.6.1.min.js"></script>
-           <script src="stuff/js/jquery.address-1.4.min.js"></script>
-           <script src="stuff/js/lib/arbor.js"></script>
-           <script src="stuff/js/lib/arbor-tween.js"></script>
-           <script src="stuff/js/lib/graphics.js"></script>
+           <script src="scripts/js/jquery-1.6.1.min.js"></script>
+           <script src="scripts/js/lib/arbor.js"></script>
+           <script src="scripts/js/lib/arbor-tween.js"></script>
+           <script src="scripts/js/lib/graphics.js"></script>
            <script src="scripts/landingTutGraph.js"></script>
-           <script src="script/main.js"></script>
+           <script src="scripts/main.js"></script>
            <link rel="stylesheet" href="css/indexStyle.css"/>
    </head>
    <body>
