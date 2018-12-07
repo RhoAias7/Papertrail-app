@@ -170,6 +170,14 @@
               } else {
                 dom.removeClass('linkable')
               }
+
+              if (!nearest.edge) return false
+              selected = (nearest.distance < 50) ? nearest : null
+              if (selected && selected.edge.data.comment) {
+                dom.addClass('linkable')
+              } else {
+                dom.removeClass('linkable')
+              }
             }
             return false
           },
@@ -184,12 +192,14 @@
 
             if (nearest && selected && nearest.node === selected.node) {
               var link = selected.node.data.link
+              var comment = selected.edge
               if (link.match(/^#/)) {
                 $(that).trigger({
                   type: "navigate",
                   path: link.substr(1)
                 })
               } else {
+                console.log(comment);
                 var myDiv = document.createElement('div')
                 myDiv.className += myDiv.className ? ' row formContainer' : 'row formContainer';
 

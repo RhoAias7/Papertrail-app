@@ -25,3 +25,13 @@ function irelRate() {
 function closeRate() {
   document.querySelector(".formContainer").style.visibility = "hidden";
 }
+
+//If upload form is not checked, alert user to agree.
+function uploadCheck() {
+  console.log("test text");
+  if (document.getElementById("uploadChecked").checked) {
+    alert("checked");
+  } else {
+    alert("You didn't check it! Let me check it for you.");
+  }
+}

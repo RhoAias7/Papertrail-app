@@ -34,19 +34,6 @@ if (isset($_POST['send'])) {
     }
 } 
 
-// if(isset($_POST['delete'])){
-//     $n = $nodeID;
-//     $query = 'DELETE FROM `review_notes` WHERE `note_id` = '.$n.'';
-//     $query1 = 'DELETE FROM `notes` WHERE `note_id` = '.$n.'';
-//     $sql = mysqli_query($conn, $query) or die ('Error updating database: '.mysqli_error($conn));
-//     $sql1 = mysqli_query($conn, $query1) or die ('Error updating database: '.mysqli_error($conn));
-//     if($sql && $sql1){
-//         header("Location: index.php?delete=success");
-//     }else{
-//         echo '<div class="alert alert-success" role="alert">Delete Failed!<a href="#" class="close" data-dismiss="alert">&times;</a></div>';
-//     }
-// }
-
 if(isset($_POST['delete'])){
     $query = "SELECT * FROM `notes`";
 
@@ -65,8 +52,6 @@ if(isset($_POST['delete'])){
             header("Location: index.php?delete=success");
         }else{
             header("Location: index.php?delete=failed");
-
-            // echo '<div class="alert alert-success" role="alert">Delete Failed!<a href="#" class="close" data-dismiss="alert">&times;</a></div>';
         }
     }else{
         header("Location: index.php?delete=notOwner");
