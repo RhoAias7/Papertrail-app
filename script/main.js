@@ -1,3 +1,4 @@
+console.log("test indexx");
 //fade CTA
 $(document).ready(function() {
   $(".cta")

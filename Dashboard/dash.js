@@ -1,3 +1,5 @@
+console.log("test");
+
 function ajax() {
   var req = new XMLHttpRequest();
 
@@ -17,6 +19,7 @@ setInterval(function() {
 //moving dashboard viewport
 $(document).ready(function() {
   console.log("test");
+
   const el = document.querySelector(".dashboard-content");
   el.addEventListener("mousemove", e => {
     el.style.backgroundPositionX = -e.offsetX + "px";
