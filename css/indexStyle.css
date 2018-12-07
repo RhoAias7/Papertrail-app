@@ -1,11 +1,26 @@
 body {
-  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
   height: 100%;
   margin: 0px;
   border: 0;
 }
+h1 {
+  font-size: 50px;
+}
+p,
+li,
+ol {
+  font-size: 17px;
+}
+
+p::selection,
+li::selection,
+ol::selection {
+  background: #dcf8ff;
+  color: white;
+}
 .zero {
-  height: 500px;
+  height: 70vh;
 }
 .navbar {
   color: #00b9e4;
@@ -33,7 +48,6 @@ body {
 .cta {
   color: #00b9e4;
   font-weight: 400;
-  font-size: 50px;
 }
 
 .signUp {
@@ -56,11 +70,13 @@ body {
 }
 .one {
   background-color: #dcf8ff;
-  height: 350px;
+  height: 65vh;
+  display: block;
 }
 
 .info {
   margin-top: 20px;
+  display: block;
 }
 
 .what {
@@ -71,6 +87,7 @@ body {
   margin-bottom: 25px;
   border: 4px;
   border-bottom-style: solid;
+  display: block;
 }
 
 .leftAlign {
@@ -85,14 +102,18 @@ h4 {
 
 .info-image {
   margin-top: 20px;
+  display: block;
 }
 
 .two {
   background-color: white;
+  height: 60vh;
+  display: block;
 }
 
 .tutSection {
   margin-top: 20px;
+  display: block;
 }
 
 .tutHeader {
@@ -113,6 +134,7 @@ i {
 .three {
   background-color: #dcf8ff;
   height: 1000px;
+  display: block;
 }
 
 .subHeader {
@@ -157,6 +179,7 @@ i {
 .card-link {
   float: right;
   font-size: 30px;
+
   color: #00b9e4;
 }
 
@@ -212,19 +235,17 @@ styling for Dashboard
 */
 .dashNav {
   width: 100%;
+  position: fixed;
+  z-index: 1;
 }
-.parallax-viewport {
-  height: 800;
-  width: 500;
-  position: relative;
-  overflow: hidden;
-  background-image: url("../img/dbBack.jpg");
+.dashboard-content {
 }
-.parallax-layer {
-  position: absolute;
-  background-repeat: no-repeat;
+.dashboard-body {
+  height: 300vh;
+  width: 250%;
+  background-image: url("../img/spaceTwo.jpg");
+  background-position: right 80% top;
 }
-
 /* 
 ====================
 ====================

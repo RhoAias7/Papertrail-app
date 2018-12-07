@@ -1,9 +1,6 @@
-<?php 
-session_start();
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
-   
    <head>
     <title>PaperTrail</title>
            <link rel="shortcut icon" type="image/png" class="img-fluid" href="../../img/plane.png"/>
@@ -22,39 +19,32 @@ session_start();
            <script src="scripts/main.js"></script>
            <link rel="stylesheet" href="css/indexStyle.css"/>
    </head>
-   
    <body>
-
 <!--NAVIGATION-->
       <nav class="navbar navbar-expand-md">
          <a class="navbar-brand" href="index.php">
             <img src="img/plane.png" height="30px">
          </a> 
-         
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>
          </button>
          <?php 
-            if (isset($_SESSION['userUid'])) {
-                
+            if (isset($_SESSION['userUid'])) {  
                 echo '<div class="navbar-collapse collapse" id="collapsingNavbar">
-                    <form action="regSystem/logout.php" method="post">
-                            <button type="submit" name="logout-submit" class="btn">Logout</button>
+                    <form action = "regSystem/logout.php" method="post">
+                            <button type="submit" name="logout-submit" class="btn navBtn">Logout</button>
                     </div>';
             }
-            
-            else {
-                   
+            else { 
                    echo '<div class="navbar-collapse collapse" id="collapsingNavbar">
                     <a href="signInPage.php" class="btn navBtn">Sign In</a>
-                    </div>';
-                   
+                    </div>';     
             }
          ?>
       </nav>
-        <!--LANDING CTA-->
+<!--LANDING CTA-->
           <div class="container-fluid zero">
              <div class="row">
                 <div class="col-md-1"></div>
@@ -65,19 +55,15 @@ session_start();
                 <div class="col-md-1"></div>
              </div>
           </div>
-        
 <!-- SCROLL TO TOP -->
          <a href="#" class="scrollUp"> ^ </a>
-        <!--DESCRIPTION-->
+<!--DESCRIPTION-->
          <div class="container-fluid one">
             <div class="row">
-
                <div class="col-md-6 col-sm-12 col-12 info-image">
                   <img src="img/nodes.png" width="100%" height="100%">
                </div>
-
                <div class="col-md-1"></div>
-
                <div class="col-md-5 col-sm-12 col-12 info text-center">
                   <h3 class="what">What is PaperTrail?</h3>
                   <div class="leftAlign">
@@ -87,10 +73,8 @@ session_start();
                       <h4>Quickly discover the best notes for you ✓</h4>
                   </div>
                </div>
-
             </div>
          </div>
-         
 <!--TUTORIAL TEXT-->
          <div class="container-fluid two">
             <div class="row">
@@ -116,12 +100,8 @@ session_start();
             </div>
          </div>
 <!--SUBJECT SELECITON-->
-
-
-         
          <?php 
             if (isset($_SESSION['userUid'])) {
-                
                 echo'
                 <div class="container-fluid three">
                   <div class="row subHeader"></div> 
