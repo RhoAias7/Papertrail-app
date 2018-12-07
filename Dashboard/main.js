@@ -15,9 +15,11 @@ setInterval(function() {
 }, 1000);
 
 //moving dashboard viewport
-const el = document.querySelector(".dashboard-body");
-
-el.addEventListener("mousemove", e => {
-  el.style.backgroundPositionX = -e.offsetX + "px";
-  el.style.backgroundPositionY = -e.offsetY + "px";
+$(document).ready(function() {
+  console.log("test");
+  const el = document.querySelector(".dashboard-content");
+  el.addEventListener("mousemove", e => {
+    el.style.backgroundPositionX = -e.offsetX + "px";
+    el.style.backgroundPositionY = -e.offsetY + "px";
+  });
 });

@@ -11,10 +11,8 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script src="main.js"></script>
-    <title>Welcome | Papertrail Dashboard</title>
+    <title>Welcome | Dashboard</title>
     <link rel="shortcut icon" type="image/png" class="img-fluid" href="../../img/plane.png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -24,14 +22,15 @@
     <script src="../scripts/js/lib/graphics.js"></script>
     <script src="../scripts/js/lib/renderer.js"></script>
     <script src="../scripts/rate.js"></script>
-    <script src="ajax.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="ajax.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/indexStyle.css">
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
 </head>
 
-<body>
+<body class="dashboard-body">
     <nav class="navbar navbar-expand-md dashNav">
         <a class="navbar-brand" href="../index.php">
             <img src="../img/plane.png" width="30px" height="30px" alt="">
@@ -39,13 +38,13 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
-<div class="dashboard-body"> 
+<div class="dashboard-content"> 
 <!--  Control panel-->
     <div class="controlPanel row">
         <div class="panel-top panel row">
             <button type="button"  data-toggle="modal" data-target="#bottomLeft1" class="panelButton">
-                  <i class="fas fa-cloud-upload-alt panelIcon"></i>
-               </button>
+                <i class="fas fa-cloud-upload-alt panelIcon"></i>
+            </button>
         </div>
         <div class="panel-bottom panel row">
             <button type="button" class="panelButton" data-toggle="modal" data-target="#chatModal">
@@ -145,7 +144,7 @@ include "rate.php";
   </div>
 </div>
     <!-- Chat-Modal -->
-
+<!--
     <script onload="loadDoc()">
         //dont touch it, it works, I dont know how
         $('#uploadCheck').on('click', function(){
@@ -156,5 +155,17 @@ include "rate.php";
         sys.renderer = Renderer("#dashCanvas");
         <?php include "show.php";?>
     </script>
+    -->
+    <script> 
+     console.log("test");
+        $(document).ready(function() {
+ 
+  const el = document.querySelector(".dashboard-content");
+  el.addEventListener("mousemove", e => {
+    el.style.backgroundPositionX = -e.offsetX + "px";
+    el.style.backgroundPositionY = -e.offsetY + "px";
+  });
+});
+    <script>
 </body>
 </html>

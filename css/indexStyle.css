@@ -16,11 +16,11 @@ ol {
 p::selection,
 li::selection,
 ol::selection {
-  background: #dcf8ff; /* WebKit/Blink Browsers */
+  background: #dcf8ff;
   color: white;
 }
 .zero {
-  height: 500px;
+  height: 70vh;
 }
 .navbar {
   color: #00b9e4;
@@ -70,11 +70,13 @@ ol::selection {
 }
 .one {
   background-color: #dcf8ff;
-  height: 350px;
+  height: 65vh;
+  display: block;
 }
 
 .info {
   margin-top: 20px;
+  display: block;
 }
 
 .what {
@@ -85,6 +87,7 @@ ol::selection {
   margin-bottom: 25px;
   border: 4px;
   border-bottom-style: solid;
+  display: block;
 }
 
 .leftAlign {
@@ -99,14 +102,18 @@ h4 {
 
 .info-image {
   margin-top: 20px;
+  display: block;
 }
 
 .two {
   background-color: white;
+  height: 60vh;
+  display: block;
 }
 
 .tutSection {
   margin-top: 20px;
+  display: block;
 }
 
 .tutHeader {
@@ -127,6 +134,7 @@ i {
 .three {
   background-color: #dcf8ff;
   height: 1000px;
+  display: block;
 }
 
 .subHeader {
@@ -230,14 +238,14 @@ styling for Dashboard
   position: fixed;
   z-index: 1;
 }
+.dashboard-content {
+}
 .dashboard-body {
-  height: auto;
-  height: 700px;
+  height: 300vh;
+  width: 250%;
   background-image: url("../img/spaceTwo.jpg");
+  background-position: right 80% top;
 }
-#bottomCenter {
-}
-
 /* 
 ====================
 ====================

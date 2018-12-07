@@ -35,7 +35,7 @@
             if (isset($_SESSION['userUid'])) {  
                 echo '<div class="navbar-collapse collapse" id="collapsingNavbar">
                     <form action = "regSystem/logout.php" method="post">
-                            <button type="submit" name="logout-submit" class="btn">Logout</button>
+                            <button type="submit" name="logout-submit" class="btn navBtn">Logout</button>
                     </div>';
             }
             else { 
