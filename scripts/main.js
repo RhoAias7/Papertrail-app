@@ -37,3 +37,14 @@ $(document).ready(function() {
     $("html", "body").animate({ scrollTop: 0 }, 1000);
   });
 });
+
+//moving dashboard viewport
+$(document).ready(function() {
+  console.log("test");
+
+  const el = document.querySelector(".dashboard-content");
+  el.addEventListener("mousemove", e => {
+    el.style.backgroundPositionX = -e.offsetX + "px";
+    el.style.backgroundPositionY = -e.offsetY + "px";
+  });
+});
