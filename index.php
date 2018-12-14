@@ -60,11 +60,11 @@
 <!--DESCRIPTION-->
          <div class="container-fluid one">
             <div class="row">
-               <div class="col-md-6 col-sm-12 col-12 info-image">
+               <div class="col-md-6 info-image">
                   <img src="img/nodes.png" width="100%" height="100%">
                </div>
                <div class="col-md-1"></div>
-               <div class="col-md-5 col-sm-12 col-12 info text-center">
+               <div class="col-md-5 info text-center">
                   <h3 class="what">What is PaperTrail?</h3>
                   <div class="leftAlign">
                      <h4>Share your notes ✓</h4>
