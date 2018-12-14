@@ -6,6 +6,7 @@
            <link rel="shortcut icon" type="image/png" class="img-fluid" href="../../img/plane.png"/>
            <meta name="viewport" content="width=device-width, inital-scale=1" charset="utf-8">
            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+           <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>       -->
            <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -24,6 +25,11 @@
          <a class="navbar-brand" href="index.php">
             <img src="img/plane.png" height="30px">
          </a> 
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+         </button>
          <?php 
             if (isset($_SESSION['userUid'])) {  
                 echo '<div class="navbar-collapse collapse" id="collapsingNavbar">
@@ -41,7 +47,7 @@
 <!--LANDING CTA-->
           <div class="container-fluid zero">
              <div class="row">
-                <div class="col-md-1"></div>
+                <div class="col-md-1"></div> git
                 <div class="col-md-10 col-sm-12 col-12 landing">
                  <h1 class="cta">Join your peers today<br> to share and explore<br> our vast libraries of <br>your study material</h1><br>
            		    <a href="signUpPage.php" class="btn signUp">Sign Up Today</a>
