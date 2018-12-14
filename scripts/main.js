@@ -37,3 +37,15 @@ $(document).ready(function() {
     $("html", "body").animate({ scrollTop: 0 }, 1000);
   });
 });
+
+//moving dashboard viewport
+$(document).ready(function() {
+  console.log("test");
+
+  const dash = document.querySelector(".dashboard-body");
+
+  dash.addEventListener("MouseEntered", e => {
+    dash.style.backgroundPositionX = -e.offsetX + "px";
+    dash.style.backgroundPositionY = -e.offsetY + "px";
+  });
+});
