@@ -1,7 +1,7 @@
 <?php 
+include 'dbh.inc.php';
 session_start();
 
-include 'dbh.inc.php';
 
 $uid = $_SESSION['userId'];
 if(isset($_GET['name'])){

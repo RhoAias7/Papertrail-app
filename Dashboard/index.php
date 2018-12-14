@@ -1,15 +1,7 @@
 <?php
-//     include 'dbh.inc.php';
+session_start();
 
-//     if(session_status() == PHP_SESSION_NONE){
-        session_start();
-
-//         header("Location: ../index.php");
-//     }else if(session_status() != PHP_SESSION_NONE){
-//         header("Location: index.php");
-//    }
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Welcome | Dashboard</title>
@@ -145,7 +137,6 @@ include "rate.php";
   </div>
 </div>
     <!-- Chat-Modal -->
-<!--
     <script onload="loadDoc()">
         //dont touch it, it works, I dont know how
         $('#uploadCheck').on('click', function(){
@@ -156,7 +147,6 @@ include "rate.php";
         sys.renderer = Renderer("#dashCanvas");
         <?php include "show.php";?>
     </script>
-    -->
     <script>
 </body>
 </html>

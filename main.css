@@ -1,0 +1,38 @@
+/* 
+====================
+====================
+styling for jumbotron
+====================
+====================
+*/
+
+.jumbotron{
+    background-image: url("https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fi.huffpost.com%2Fgen%2F1282620%2Fthumbs%2Fo-CLOUDS-facebook.jpg&f=1");
+}
+
+/* 
+====================
+====================
+styling for network
+====================
+====================
+*/
+
+#network{
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    background: #222;
+    color: red;
+}
+
+#canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
