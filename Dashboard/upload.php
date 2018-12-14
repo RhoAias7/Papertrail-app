@@ -1,5 +1,6 @@
 <?php
 include "dbh.inc.php";
+
 $uid = $_SESSION['userId'];
 if (isset($_POST["upload"]))
 	{
