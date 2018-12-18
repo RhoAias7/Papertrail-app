@@ -28,9 +28,9 @@ if (isset($_POST['send'])) {
     $query = 'INSERT INTO `review_notes`(`user_id`, `note_id`, `rating`, `comment`) VALUES ('.$uid.', '.$n.', '.$r.', "'.$c.'")';
     $sql = mysqli_query($conn, $query) or die ('Error updating database: '.mysqli_error($conn));
     if($sql){
-        header("Location: index.php?comment=success");
+        header("Location: ../index.php?comment=success");
     }else{
-        header("Location: index.php?comment=failed");
+        header("Location: ../index.php?comment=failed");
     }
 } 
 
@@ -49,12 +49,12 @@ if(isset($_POST['delete'])){
         $sql = mysqli_query($conn, $query) or die ('Error updating database: '.mysqli_error($conn));
         $sql1 = mysqli_query($conn, $query1) or die ('Error updating database: '.mysqli_error($conn));
         if($sql && $sql1){
-            header("Location: index.php?delete=success");
+            header("Location: ../index.php?delete=success");
         }else{
-            header("Location: index.php?delete=failed");
+            header("Location: ../index.php?delete=failed");
         }
     }else{
-        header("Location: index.php?delete=notOwner");
+        header("Location: ../index.php?delete=notOwner");
     }
 }
 

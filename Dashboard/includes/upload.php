@@ -1,5 +1,6 @@
 <?php
 include "dbh.inc.php";
+if (isset($_SESSION['userId'])){
 
 $uid = $_SESSION['userId'];
 if (isset($_POST["upload"]))
@@ -21,14 +22,17 @@ if (isset($_POST["upload"]))
                 if($sql){
                     $fileDestination = 'uploads/'.$fileName;
                     move_uploaded_file($fileTmpName, $fileDestination);
-                    echo '<div class="alert alert-success" role="alert">Upload Successful!<a href="#" class="close" data-dismiss="alert">&times;</a></div>';
+                    echo "toastr.success('Your note was uploaded!')";
                 }else{
-                    echo '<div class="alert alert-danger" role="alert">Upload Was Too Big!<a href="#" class="close" data-dismiss="alert">&times;</a></div>';
+                    echo "toastr.warning('Something bad happend!')";
 
                 }
             }
             else{
-                echo '<div class="alert alert-danger" role="alert">An error has occurred<a href="#" class="close" data-dismiss="alert">&times;</a></div>';
+                echo "toastr.warning('There was something wrong with the file!')";
             }
+}
+}else{
+    echo "toastr.error('You must be <a style= \"color: blue; \" href= \"../../signInPage.php \">logged in</a> to see this page!');";
 }
 ?>

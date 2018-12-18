@@ -10,7 +10,7 @@
     var that = {
       init: function(system) {
         particleSystem = system
-        particleSystem.screenSize(canvas.width, canvas.height)
+        particleSystem.screenSize()
         particleSystem.screenPadding(36, 60, 36, 60)
 
         $(window).resize(that.resize)
@@ -21,7 +21,7 @@
       },
 
        resize: function() {
-        canvas.width = $(window).width()
+        // canvas.width = $(window).width()
         canvas.height = $(window).height()
         sys.screen({
           size: {
@@ -199,27 +199,8 @@
                   path: link.substr(1)
                 })
               } else {
-                console.log(comment);
-                var myDiv = document.createElement('div')
-                myDiv.className += myDiv.className ? ' row formContainer' : 'row formContainer';
-
-                myDiv.innerHTML = '<div class="rateForm form"><a href="#" class="close">&times;</a><div class="card-title form"><h5 id="cardh5">Rate This Note</h5><button type="button" class="close newclose" data-dismiss="modal" aria-label="Close"><button class="btn btn-info downloadBtn"><i class="far fa-save"></i>Download</button></div><div class="card-body form"><h6 id="cardh6">Select one of the options below:</h6><form class="form-group" method="post" role="form" action="includes/rate.php?name='+selected.node.name+'"><ul><div class="row rateRow" id="perRow" onclick="perRate()"><div class="col-3 checkSide"><input id="changePer" value="good" class="check" type="radio" name="rate"></div><div class="col-9 textSide">PERFECT</div></div><div class="row rateRow" id="relRow" onclick="relRate()"><div class="col-3 checkSide"><input id="changeRel" class="check" value="meh" type="radio" name="rate"></div><div class="col-9 textSide">RELEVANT</div></div><div class="row rateRow" id="irelRow" onclick="irelRate()"><div class="col-3 checkSide"><input id="changeIrel" class="check" value="bad" type="radio" name="rate"></div><div class="col-9 textSide">IRRELEVANT</div></div></ul><div class="showHideBottom"><label>Have your say...</label><div class="row formBottom"><div class="row"><div class="col-9 textField"><textarea class="form-control tf" rows="3" id="userComment" placeholder="Your comment here.." name="usrComment"></textarea></div><div class="col-3"><button type="submit" method="post" class="btn commentSubmit" name="send"><i class="fas fa-paper-plane"></i></button><button type="submit" method="post" class="btn deleteBtn" name="delete"><i class="fas fa-trash"></i></button></div></div></div></form></div></div></div>'
-                document.body.appendChild(myDiv)
-
-                var getgID = document.getElementById('cardh5')
-
-                var myDiv1 = document.createElement('div')
-                myDiv1.innerHTML = '<p id="node_name"> Name: '+selected.node.data.label+'</p>'
-                getgID.appendChild(myDiv1)
-
-
-                $( ".downloadBtn" ).click(function() {
                   window.open(link, "_blank")
-                });
 
-                $( ".close" ).click(function() {
-                  $('.formContainer').remove();
-                });
 
               }
               return false

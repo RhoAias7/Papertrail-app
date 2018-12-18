@@ -1,0 +1,232 @@
+body{
+    overflow-y: hidden;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-image: url("../img/cloud.jpg");
+}
+
+.sticky-top {
+    position: absolute;
+    background-color: #f8f9fa00 !important; 
+}
+
+/*Canvas sizing*/
+#dashCanvas{
+    width: 100%;
+}
+
+/*Button*/
+#bottom-right {
+  background-color: #009be4;
+  border: 2px solid black;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+font-size: 50px;
+
+}
+
+#bottom-left {
+  background-color: #009be4;
+  border: 2px solid black;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
+font-size: 50px;
+
+}
+
+#bottom-center{
+  background-color: #009be4;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  font-size: 50px;
+}
+
+#bottom-right:hover,
+#bottom-left:hover,
+#bottom-center:hover {
+  background-color: #d3f0f7;
+  border: 2px solid white;
+}
+/*Button*/
+
+.slide-text{
+    color: black;
+}
+
+.carousel-control-prev, .carousel-control-next
+{
+    color: black;
+}
+.carousel-item{
+    padding-bottom: 120px;
+
+}
+
+.arrow{
+    font-size: 40px;
+    color: #009be4;
+}
+
+.modal-header{
+    background-color: #009be4;
+}
+
+.img-thumbnail {
+    background-color: #009be4;
+    border: 1px solid #000000;
+}
+
+.upload-icon{
+    font-size: 100px;
+}
+
+.upload-panel{
+    padding-top: 10px;
+    text-align:center;
+    border: 2px dashed #009be4;
+    color: #009be4;
+}
+
+#chat-box{
+    width: 100%;
+    overflow: auto;
+    height: 300px;
+  }
+
+  #txtArea{
+      margin-top: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #chat_data{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-bottom: 1px solid #009be4;
+    font-weight: bold;
+    height: 100%;
+    font-size: 20px;
+  }      
+
+  /* 
+====================
+====================
+styling for rate form 
+====================
+====================
+*/
+.form {
+    background: white;
+  height: auto;
+  width: 350px;
+}
+#cardh5 {
+  color: #0c9cdf;
+  padding-top: 10px;
+}
+#cardh6 {
+  color: #0c9cdf;
+  margin: auto;
+}
+.rateRow {
+  background-color: #9f9f9f;
+  height: 60px;
+  margin-top: 5px;
+  padding: 5px;
+  border: 2px rgb(255, 255, 255);
+  border-style: outset;
+  width: 95%;
+}
+.rateRow {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.rateRow:hover {
+  border: 2px white;
+  border-style: inset;
+  cursor: pointer;
+}
+#perRow:hover {
+  background-color: #38bd34;
+}
+#relRow:hover {
+  background-color: #009be4;
+}
+#irelRow:hover {
+  background-color: #f13f53;
+}
+
+.check {
+  margin-top: 50%;
+  height: 20px;
+  width: 20px;
+}
+.textSide {
+  margin-top: 3%;
+}
+.textField {
+  left: 20px;
+}
+.commentSubmit{
+    text-align: right;
+}
+.commentSubmit, .deleteBtn {
+  height: 50%;
+  background-color: #009be4;
+  width: 90%;
+  border: 2px solid #045f89;
+  color: white;
+  font-size: 24px;
+  border-radius: 0 5px 5px 0;
+}
+.fa-paper-plane {
+
+  margin-left: -10px;
+}
+.showHideBottom {
+  visibility: hidden;
+}
+.textField {
+  display: none;
+  
+}
+textarea.form-control {
+    height: 100%;
+    border: 2px solid black;
+
+}
+.formContainer {
+    text-align: center;
+  top: 50px;
+  left: 340px;
+  display: block;
+  float: right;
+  position: absolute;
+  margin-bottom: 0;
+  border: 2px solid black;
+}
+.btn-info {
+  width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.fa-save {
+  font-size: 20px;
+  color: white;
+}
+.downloadBtn{
+    background: #009be4;
+}
+.close{
+    padding-right: 5px;
+}

@@ -1,5 +1,3 @@
-console.log("test");
-
 function ajax() {
   var req = new XMLHttpRequest();
 
@@ -9,7 +7,7 @@ function ajax() {
     }
   };
 
-  req.open("GET", "chat.php", "true");
+  req.open("GET", "includes/chat.php", "true");
   req.send();
 }
 setInterval(function() {
